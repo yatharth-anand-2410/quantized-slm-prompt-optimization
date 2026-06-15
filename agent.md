@@ -92,11 +92,12 @@ graph TD
 
 ## 🤖 Daily Automation & Git Sync System
 
-To ensure continuous progress, build a strong GitHub contribution graph, and keep the code synced, we have established a **Daily Automation System**:
+To ensure continuous progress, build a strong GitHub contribution graph, and keep the code synced without bloating the main chat thread's memory, we use a **Delegated Subagent Architecture**:
 
 *   **Schedule:** Triggers daily at **12:00 PM (noon)** local time.
-*   **Actions Performed:**
-    1.  **Git Status Scan:** Automatically detects any code, notes, or paper drafts modified during the day.
-    2.  **Commit & Push:** Commits changes using an AI-generated descriptive message and pushes them directly to the `origin` remote.
-    3.  **Active Research Advancement:** Reads `task.md` to identify the next actionable research item (e.g., executing a benchmark script, performing web search for literature, drafting paper sections) and advances it, saving progress directly to the repository before the day ends.
+*   **Execution Flow:**
+    1.  The scheduler wakes up the parent agent in the main thread.
+    2.  The parent agent immediately spawns a specialized **`daily-coder` subagent** in a separate conversation context.
+    3.  The `daily-coder` subagent scans git status, runs required evaluations, updates `task.md`, and pushes commits to the GitHub repository.
+    4.  The subagent terminates and passes a short, 2-line execution summary back to the parent agent, keeping the main chat thread's context window extremely clean.
 
