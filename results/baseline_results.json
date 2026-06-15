@@ -1,0 +1,11 @@
+{
+  "gemma2:2b": {
+    "quantization": "Q4_0",
+    "json_accuracy": 100.0,
+    "json_total": 5,
+    "json_correct": 5,
+    "math_accuracy": 100.0,
+    "math_total": 5,
+    "math_correct": 5
+  }
+}
