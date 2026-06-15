@@ -47,9 +47,16 @@ graph TD
   * `Phi-3.5-mini-3.8B` (FP16, Q8_0, Q4_K_M)
 * **Optimization Framework:** **DSPy** or a custom genetic prompt mutation script.
 
-### 2. Dataset Selections (TBD)
-* **Goal:** Identify tasks showing high degradation under quantization.
-* **Selection Process:** To be finalized in Phase 1 based on literature review findings. Candidate tasks include structured JSON parsing, multi-step logical/mathematical reasoning (GSM8K), and conversational tool-calling.
+### 2. Dataset Selections
+
+We have finalized the evaluation benchmarks to target tasks that are highly sensitive to quantization:
+
+1.  **JSON Schema Extraction:** Cleanlab's Structured Output Benchmark (specifically `Cleanlab/pii-extraction` and `Cleanlab/fire-financial-ner-extraction`).
+    *   *Purpose:* Evaluate structured compliance and key-value type precision.
+2.  **Multi-Step Math Reasoning:** OpenAI's **GSM8K** test dataset.
+    *   *Purpose:* Measure calculation drift propagation over multi-hop arithmetic steps.
+3.  **Adversarial Math Robustness:** **SVAMP** dataset.
+    *   *Purpose:* Evaluate phrasing sensitivity and logical robustness under low-precision constraints.
 
 ---
 
