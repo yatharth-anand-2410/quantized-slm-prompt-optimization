@@ -106,5 +106,6 @@ To ensure continuous progress, build a strong GitHub contribution graph, and kee
     1.  The scheduler wakes up the parent agent in the main thread.
     2.  The parent agent immediately spawns a specialized **`daily-coder` subagent** in a separate conversation context.
     3.  The `daily-coder` subagent scans git status, runs required evaluations, updates `task.md`, and pushes commits to the GitHub repository.
-    4.  The subagent terminates and passes a short, 2-line execution summary back to the parent agent, keeping the main chat thread's context window extremely clean.
+    4.  The subagent logs the day's experimental activities, results, and code modifications by date under the `experimentation_activity_logs/` folder.
+    5.  The subagent terminates and passes a short, 2-line execution summary back to the parent agent, keeping the main chat thread's context window extremely clean.
 
