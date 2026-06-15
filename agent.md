@@ -60,40 +60,31 @@ We have finalized the evaluation benchmarks to target tasks that are highly sens
 
 ---
 
-## 📂 Implementation Phases
+## 📂 Implementation Phases (Accelerated Timeline)
 
-### Phase 1: Literature Review & Setup (Weeks 1-2)
-- **Literature Review Focus:**
-  - Quantization sensitivity: Read *PrecisionDiff* (precision-induced behavioral disagreements) and papers on LLM quantization limits.
-  - Automated Prompt Optimization (APO): Read DSPy, GEPA, OPRO (Optimization by PROmpting).
-- **Environment Setup:** Build the data pipeline, integrate Ollama/MLX-LM, and write scripts to measure baseline accuracy across precision levels.
+### Phase 1: Literature Review & Setup (June 13 – June 17, Week 1)
+*   **Literature Review:** Summarize precision drift and discrete prompt optimization (Completed early).
+*   **Environment Setup:** Implement baseline scripts and run test cases (Completed early).
+*   **Next step:** Download and parse the benchmark datasets (GSM8K, SVAMP, Cleanlab).
 
-### Phase 2: Experimental Run - Baseline & Degradation (Weeks 3-4)
-- Run baseline evaluations of `Llama-3.2-3B-Instruct` and `Gemma-2-2B-IT` on FP16, Q8, Q4, and Q3 on the target benchmarks.
-- Document precision-induced behavioral drift (e.g., where does reasoning break down?).
+### Phase 2: Experimental Run - Baseline & Degradation (June 17 – June 30, Weeks 1-3)
+*   Benchmark `Llama-3.2-3B-Instruct` and `Gemma-2-2B-IT` on FP16, Q8, Q4, and Q3/Q2.
+*   Observe and document precision-induced degradation on the hard datasets (JSON structure violations, reasoning drift).
 
-### Phase 3: Prompt Optimization Loop (Weeks 5-6)
-- Run DSPy/Genetic optimizer on the full-precision models to generate $P_{FP16}$.
-- Run the exact same optimizer on the 4-bit models to generate $P_{Q4}$.
-- Run cross-precision evaluations:
-  - Assess $P_{FP16}$ on Q4/Q3 models.
-  - Assess $P_{Q4}$ on FP16/Q8/Q4/Q3 models.
+### Phase 3: Prompt Optimization Loop (June 30 – July 14, Weeks 3-5)
+*   Run the genetic prompt mutation loops directly on the quantized models to generate $P_{Q4}$.
+*   Run cross-precision transfer evaluations (testing $P_{FP16}$ on Q4 models and $P_{Q4}$ on FP16 models).
+*   Compile performance recovery metrics.
 
-### Phase 4: Drafting the Paper (Weeks 7-9)
-- **Outline:**
-  - **Abstract:** Motivation, key findings (quantization-aware prompt benefits), and high-level results.
-  - **Introduction:** Why compute constraints make quantized SLMs necessary; how prompting compensates.
-  - **Related Work:** Model quantization, prompt tuning/engineering, and cross-model transferability.
-  - **Methodology:** Details of the genetic evolution loop and experimental setup.
-  - **Experiments & Results:** Quantitative comparison tables, degradation curves, and prompt transfer matrices.
-  - **Discussion:** Analysis of why quantization-aware prompts work (e.g., lexical simplified structures, explicit thinking steps).
-  - **Conclusion:** Summary and future directions.
-- **Tools:** Use LaTeX (Overleaf) with standard ACL/NeurIPS templates.
+### Phase 4: Drafting EMNLP Short Paper (July 14 – July 28, Weeks 5-7)
+*   Format using EMNLP 2026 LaTeX style guide.
+*   Draft the Core Content (Abstract, Introduction, Related Work, Methodology, Experiments, Discussion).
+*   Generate charts, results tables, and prompt transfer matrices.
 
-### Phase 5: Submission & Peer Review Prep (Weeks 10+)
-- Refine drafts based on feedback.
-- Format for EMNLP (Short Paper) or ICLR/COLING (Full Paper).
-- Prepare code and prompt trace repositories for reproducibility.
+### Phase 5: Polish & Submission (July 28 – August 2, Week 7)
+*   Refine drafts and proofread based on peer/advisor feedback.
+*   Polish the codebase repository for public replication.
+*   Submit to the EMNLP 2026 Short Paper portal before the August 2 deadline.
 
 ---
 
