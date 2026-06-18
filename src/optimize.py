@@ -102,7 +102,7 @@ def evaluate_prompt(model: str, task: str, prompt_template: str, dataset: list) 
 
     total_score = 0.0
     for item in dataset:
-        prompt = prompt_template.format(input=item["input"])
+        prompt = prompt_template.replace("{input}", item["input"])
         output = query_ollama(model, prompt)
         total_score += score_fn(output, item["target"])
         

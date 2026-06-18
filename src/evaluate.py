@@ -290,7 +290,7 @@ def run_evaluation(model: str, task: str, limit: int, output_path: str = None):
     results_log = []
 
     for idx, item in enumerate(dataset):
-        prompt = prompt_template.format(input=item["input"])
+        prompt = prompt_template.replace("{input}", item["input"])
         output = query_ollama(model, prompt)
         score = score_fn(output, item["target"])
         total_score += score
