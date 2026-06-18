@@ -1,0 +1,359 @@
+{
+  "model": "llama3.2:latest",
+  "task": "svamp",
+  "limit": 50,
+  "metric": "Accuracy",
+  "score_percentage": 78.0,
+  "results": [
+    {
+      "index": 1,
+      "input": "Each pack of dvds costs 76 dollars. If there is a discount of 25 dollars on each pack How much do you have to pay to buy each pack?",
+      "target": 51.0,
+      "output": "To solve this problem, we need to subtract the discount from the original price of the DVD pack.\n\nOriginal price = $76\nDiscount = $25\n\nNew price = Original price - Discount\n= $76 - $25\n= $51\n\nSo, you have to pay $51 to buy each pack. \n\n#### 51",
+      "score": 1.0
+    },
+    {
+      "index": 2,
+      "input": "Dan had $ 3 left with him after he bought a candy bar. If he had $ 4 at the start How much did the candy bar cost?",
+      "target": 1.0,
+      "output": "To solve this problem, we need to find out how much money Dan spent on the candy bar. We know that he had $3 left after buying the candy bar and he started with $4.\n\nStep 1: Find the difference between the amount of money Dan had at the start and the amount he had after buying the candy bar.\nAmount spent = Amount at the start - Amount left\n= $4 - $3\n= $1\n\nSo, the candy bar cost $1. \n\n#### 1",
+      "score": 1.0
+    },
+    {
+      "index": 3,
+      "input": "Paco had 26 salty cookies and 17 sweet cookies. He ate 14 sweet cookies and 9 salty cookies. How many salty cookies did Paco have left?",
+      "target": 17.0,
+      "output": "To solve this problem, we need to subtract the number of salty cookies Paco ate from the initial number of salty cookies.\n\nStep 1: Identify the initial number of salty cookies.\nInitial number of salty cookies = 26\n\nStep 2: Identify the number of salty cookies Paco ate.\nNumber of salty cookies eaten = 9\n\nStep 3: Subtract the number of salty cookies eaten from the initial number of salty cookies to find out how many salty cookies are left.\n\nNumber of salty cookies left = Initial number of salty cookies - Number of salty cookies eaten\n= 26 - 9\n= 17\n\nTherefore, Paco had 17 salty cookies left. \n\n#### 17",
+      "score": 1.0
+    },
+    {
+      "index": 4,
+      "input": "43 children were riding on the bus. At the bus stop some children got off the bus. Then there were 21 children left on the bus. How many children got off the bus at the bus stop?",
+      "target": 22.0,
+      "output": "To solve this problem, we need to find out how many children got off the bus at the bus stop.\n\nLet's start by using a variable to represent the number of children who got off the bus. Let x be the number of children who got off the bus.\n\nWe know that initially, there were 43 children on the bus. After some children got off, there were 21 children left. So, we can set up an equation:\n\n43 - x = 21\n\nTo solve for x, we need to isolate x on one side of the equation. We can do this by subtracting 43 from both sides of the equation:\n\n-x = 21 - 43\n-x = -22\n\nNext, we multiply both sides of the equation by -1 to get rid of the negative sign:\n\nx = 22\n\nSo, 22 children got off the bus at the bus stop.\n\n#### 22",
+      "score": 1.0
+    },
+    {
+      "index": 5,
+      "input": "28 children were riding on the bus. At the bus stop 82 children got on the bus while some got off the bus. Then there were 30 children altogether on the bus. How many more children got on the bus than those that got off?",
+      "target": 2.0,
+      "output": "To solve this problem, we need to find out how many children got off the bus and then subtract that number from the number of children who got on.\n\nLet's start by using the information given at the end of the problem. We know that there were 30 children altogether on the bus after some got on and others got off.\n\nWe also know that initially, there were 28 children on the bus, and then 82 more got on. So, we can set up an equation to represent this situation:\n\n28 (initial children) + x (children who got on) - y (children who got off) = 30\n\nSince we don't know how many children got off, let's first find out how many children were on the bus after some got on. We know that 82 more got on, so we can add this to the initial number of children:\n\n28 + 82 = 110\n\nNow, we know that there are 30 children altogether on the bus, which means that 110 - y (children who got off) = 30.\n\nTo find out how many children got off, we can subtract 110 from both sides of the equation:\n\ny = 110 - 30\ny = 80\n\nNow that we know how many children got off, we can find out how many more children got on than those who got off by subtracting y (children who got off) from x (children who got on):\n\nx - y = 82 - 80\nx - y = 2\n\nSo, 2 more children got on the bus than those that got off. \n\n#### 2",
+      "score": 1.0
+    },
+    {
+      "index": 6,
+      "input": "There were 3 dollars in Olivia's wallet. She collected 49 more dollars from an atm. After she visited a supermarket there were 49 dollars left. How much more money did she collect at the atm than she spent at the supermarket?",
+      "target": 46.0,
+      "output": "To solve this problem, we need to find out how much money Olivia spent at the supermarket and then subtract that amount from the amount of money she collected at the ATM.\n\nStep 1: Find the total amount of money Olivia had after collecting $49 from the ATM.\nTotal amount = Initial amount + Amount collected\nTotal amount = $3 + $49\nTotal amount = $52\n\nStep 2: Since there were $49 left after visiting the supermarket, we can find out how much she spent by subtracting this amount from the total amount.\nAmount spent at supermarket = Total amount - Amount left\nAmount spent at supermarket = $52 - $49\nAmount spent at supermarket = $3\n\nStep 3: Now, we need to find out how much more money Olivia collected at the ATM than she spent at the supermarket.\nDifference = Amount collected at ATM - Amount spent at supermarket\nDifference = $49 - $3\nDifference = $46\n\n#### 46",
+      "score": 1.0
+    },
+    {
+      "index": 7,
+      "input": "Jerry had some action figures on a shelf in his room. Later he added 7 more action figures to the shelf. If there are a total of 10 action figures on his shelf now How many action figures did he have initially on the shelf?",
+      "target": 3.0,
+      "output": "To solve this problem, we need to find out how many action figures Jerry had initially on the shelf.\n\nLet's say the initial number of action figures is x. We know that after adding 7 more action figures, there are a total of 10 action figures on the shelf now.\n\nWe can set up an equation based on this information:\n\nx + 7 = 10\n\nTo solve for x, we need to isolate it on one side of the equation. We can do this by subtracting 7 from both sides of the equation:\n\nx = 10 - 7\nx = 3\n\nSo, Jerry had 3 action figures initially on the shelf.\n\n#### 3",
+      "score": 1.0
+    },
+    {
+      "index": 8,
+      "input": "Paco had 41 cookies. He gave 9 cookies to his friend and ate 18 cookies. How many more cookies did he eat than those he gave to his friend?",
+      "target": 9.0,
+      "output": "To solve this problem, we need to find out how many more cookies Paco ate than the ones he gave to his friend.\n\nStep 1: Find out how many cookies Paco gave away.\nPaco had 41 cookies and gave 9 cookies to his friend. So, the number of cookies given away is 9.\n\nStep 2: Find out how many cookies Paco ate.\nPaco had 41 cookies and ate 18 cookies. So, the number of cookies eaten is 18.\n\nStep 3: Calculate the difference between the number of cookies eaten and the number of cookies given away.\nTo find the difference, we subtract the number of cookies given away from the number of cookies eaten:\n18 (cookies eaten) - 9 (cookies given away) = 9\n\nTherefore, Paco ate 9 more cookies than those he gave to his friend.\n\n#### 9",
+      "score": 1.0
+    },
+    {
+      "index": 9,
+      "input": "Mary is baking a cake. The recipe calls for 3 cups of sugar 10 cups of flour and 15 cups of salt. She already put in 6 cups of flour. How many more cups of flour does she need to add?",
+      "target": 4.0,
+      "output": "To solve the problem, we need to find out how many cups of flour Mary needs to add.\n\nStep 1: Identify the total amount of flour required by the recipe.\nThe recipe calls for 10 cups of flour.\n\nStep 2: Identify the amount of flour Mary has already added.\nMary has already put in 6 cups of flour.\n\nStep 3: Calculate the remaining amount of flour needed.\nTo find out how many more cups of flour Mary needs to add, we subtract the amount she has already added from the total amount required:\n10 (total cups) - 6 (cups already added) = 4\n\nTherefore, Mary needs to add 4 more cups of flour. \n\n#### 4",
+      "score": 1.0
+    },
+    {
+      "index": 10,
+      "input": "A waiter had some customers. After 9 customers left he still had 12 customers. How many customers did he have at the start?",
+      "target": 21.0,
+      "output": "To solve this problem, we need to find out how many customers the waiter had initially. We know that after 9 customers left, he still had 12 customers.\n\nLet's denote the initial number of customers as x.\n\nWe can set up an equation based on the information given:\n\nx - 9 = 12\n\nTo solve for x, we need to isolate it on one side of the equation. We can do this by adding 9 to both sides of the equation:\n\nx - 9 + 9 = 12 + 9\nx = 21\n\nTherefore, the waiter had 21 customers at the start.\n\n#### 21",
+      "score": 1.0
+    },
+    {
+      "index": 11,
+      "input": "3 birds were sitting on the fence. 6 more storks and 2 more birds came to join them. How many more storks than birds are sitting on the fence?",
+      "target": 1.0,
+      "output": "To solve this problem, we need to find out how many birds and storks are sitting on the fence.\n\nInitially, there were 3 birds sitting on the fence.\n\nThen, 6 more storks came to join them. So now, there are:\n- Initial number of birds = 3\n- Additional number of storks = 6\n- Total number of storks = 3 + 6 = 9\n\nNext, 2 more birds came to join the initial 3 birds. So now, there are:\n- Total number of birds = 3 + 2 = 5\n\nNow we need to find out how many more storks than birds are sitting on the fence.\n- Number of storks = 9\n- Number of birds = 5\n- Difference between the number of storks and birds = 9 - 5 = 4\n\n#### 4",
+      "score": 0.0
+    },
+    {
+      "index": 12,
+      "input": "They decided to hold the party in their backyard. If they have 11 sets of tables and each set has 13 chairs How many chairs do they have in the backyard?",
+      "target": 143.0,
+      "output": "To solve this problem, we need to multiply the number of sets of tables by the number of chairs per set.\n\nNumber of sets of tables = 11\nNumber of chairs per set = 13\n\nTotal number of chairs = Number of sets of tables x Number of chairs per set\n= 11 x 13\n= 143\n\n#### 143",
+      "score": 1.0
+    },
+    {
+      "index": 13,
+      "input": "In a school there are 458 more girls than boys. If there are 692 girls How many pupils are there in that school?",
+      "target": 926.0,
+      "output": "To solve this problem, we need to find the number of boys and then add it to the number of girls to get the total number of pupils.\n\nLet's start by using the information that there are 458 more girls than boys. We can represent the number of boys as x. Then, the number of girls is x + 458.\n\nWe know that the number of girls is 692, so we can set up an equation:\n\nx + 458 = 692\n\nTo solve for x, we need to isolate it on one side of the equation. We can do this by subtracting 458 from both sides:\n\nx = 692 - 458\nx = 234\n\nNow that we know there are 234 boys, we can find the total number of pupils by adding the number of girls and boys:\n\nTotal pupils = Number of girls + Number of boys\n= 692 + 234\n= 926\n\n#### 926",
+      "score": 1.0
+    },
+    {
+      "index": 14,
+      "input": "After resting they decided to go for a swim. The depth of the water is 15 times Dean's height. Dean is 4 feet taller than Ron. If Ron stands at 13 feet How deep was the water?",
+      "target": 255.0,
+      "output": "To solve this problem, we need to follow these steps:\n\n1. Find Dean's height by adding 4 feet to Ron's height.\n2. Multiply Dean's height by 15 to find the depth of the water.\n\nStep 1: Find Dean's height\nDean is 4 feet taller than Ron, and Ron stands at 13 feet. So, Dean's height is:\n13 + 4 = 17 feet\n\nStep 2: Calculate the depth of the water\nThe depth of the water is 15 times Dean's height:\n15 x 17 = 255 feet\n\n#### 255",
+      "score": 1.0
+    },
+    {
+      "index": 15,
+      "input": "6 birds were sitting on the fence. 4 more birds and 8 more storks came to join them. How many birds are sitting on the fence?",
+      "target": 10.0,
+      "output": "To solve this problem, we need to find out how many birds are currently sitting on the fence.\n\nInitially, there were 6 birds sitting on the fence.\n\nThen, 4 more birds joined them. So now, we add these 4 birds to the initial number of birds:\n\n6 (initial birds) + 4 (additional birds) = 10\n\nNext, it's mentioned that 8 more storks came to join them. However, this information is irrelevant to the question about the number of birds sitting on the fence.\n\nTherefore, we can conclude that there are 10 birds currently sitting on the fence.\n\n#### 10",
+      "score": 1.0
+    },
+    {
+      "index": 16,
+      "input": "Marco and his dad went strawberry picking. Together they collected strawberries that weighed 36 pounds. On the way back Marco ' dad lost 8 pounds of strawberries. Marco's strawberries now weighed 12 pounds. How much did his dad's strawberries weigh now?",
+      "target": 16.0,
+      "output": "To solve this problem, we need to find out how many pounds of strawberries Marco's dad had initially and then subtract the amount he lost.\n\nLet's start by finding the total weight of strawberries that Marco and his dad collected together. We know that they collected 36 pounds in total.\n\nWe also know that after Marco's dad lost some strawberries, Marco was left with 12 pounds. Since we don't know how many pounds of strawberries Marco had initially, let's call it x. Then, the amount of strawberries Marco's dad had initially would be (36 - x).\n\nSince Marco's dad lost 8 pounds of strawberries, the weight of his strawberries now is (36 - x) - 8.\n\nWe are given that after losing some strawberries, Marco was left with 12 pounds. This means that the weight of his strawberries now is equal to 12 pounds. So we can set up an equation:\n\n(36 - x) - 8 = 12\n\nNow let's solve for x:\n36 - x - 8 = 12\n36 - x - 8 + 8 = 12 + 8\n36 - x = 20\nx = 16\n\nSo Marco had 16 pounds of strawberries initially. Now we can find the weight of his dad's strawberries:\n\n(36 - x) = (36 - 16)\n= 20\n\nNow, let's subtract the amount that was lost from this:\n20 - 8 = 12\n\nHowever, we want to know how much his dad had before he lost some. So we need to add back the 8 pounds that were lost:\n\n20 + 8 = 28\n\n#### 28",
+      "score": 0.0
+    },
+    {
+      "index": 17,
+      "input": "In a school there are 697 girls and the rest are boys. If there are 228 more girls than boys How many boys are there in that school?",
+      "target": 469.0,
+      "output": "To solve this problem, we need to find the number of boys in the school. We know that there are 697 girls and 228 more girls than boys.\n\nLet's denote the number of boys as x. Since there are 228 more girls than boys, we can set up an equation:\n\n697 = x + 228\n\nTo solve for x, we need to isolate it on one side of the equation. We can do this by subtracting 228 from both sides:\n\n697 - 228 = x + 228 - 228\n469 = x\n\nSo, there are 469 boys in the school.\n\n#### 469",
+      "score": 1.0
+    },
+    {
+      "index": 18,
+      "input": "In a school there are 732 girls and 761 boys. 682 more girls and 8 more boys joined the school. How many girls are there in the school now?",
+      "target": 1414.0,
+      "output": "To solve this problem, we need to find the total number of girls after the new students joined.\n\nStep 1: Find the initial number of girls.\nInitial number of girls = 732\n\nStep 2: Add the number of new girls who joined the school.\nNumber of new girls = 682\nTotal number of girls now = Initial number of girls + Number of new girls\n= 732 + 682\n= 1414\n\nSince we are asked to find the number of girls, our final answer is:\n\n#### 1414",
+      "score": 1.0
+    },
+    {
+      "index": 19,
+      "input": "Danny collects bottle caps and wrappers. He found 22 bottle caps and 30 wrappers at the park. Now he has 17 bottle caps and 57 wrappers in his collection. How many wrappers did danny have at first?",
+      "target": 27.0,
+      "output": "To solve this problem, we need to find out how many wrappers Danny had initially.\n\nLet's start by identifying what we know:\n\n- Danny found 30 wrappers at the park.\n- Now he has 57 wrappers in his collection.\n\nWe also know that after finding 30 wrappers, Danny now has 57 wrappers. This means that before finding those 30 wrappers, he must have had 57 - 30 = 27 wrappers.\n\nHowever, we are asked to find out how many wrappers Danny had at first. We already calculated this as 27 wrappers. But wait, there's more information: Danny found 22 bottle caps and now has 17 bottle caps in his collection. This means that before finding those 22 bottle caps, he must have had 17 - 22 = -5 bottle caps.\n\nSince we can't have a negative number of bottle caps, this means that the initial amount of bottle caps is irrelevant to our calculation for wrappers. We only need to consider the information about the wrappers.\n\nSo, Danny initially had 27 wrappers.",
+      "score": 1.0
+    },
+    {
+      "index": 20,
+      "input": "Paul got a box of 457 erasers and 617 crayons for his birthday. At the end of the school year he only had 523 crayons left while not having lost a single eraser. How many more crayons than erasers did he have left?",
+      "target": 66.0,
+      "output": "To solve this problem, we need to find out how many more crayons Paul had left compared to the number of erasers.\n\nStep 1: Find the difference in the number of crayons and erasers.\nWe know that Paul started with 457 erasers and ended up with 523 crayons. To find the difference, subtract the number of erasers from the number of crayons:\n\n523 (crayons) - 457 (erasers) = 66\n\nStep 2: Determine how many more crayons than erasers Paul had left.\nSince we already found that Paul had 66 more crayons than erasers, this is our final answer.\n\n#### 66",
+      "score": 1.0
+    },
+    {
+      "index": 21,
+      "input": "Baker made 121 cakes. He sold 105 of them and bought 170 new cakes. How many cakes does baker still have?",
+      "target": 186.0,
+      "output": "To solve this problem, we need to follow these steps:\n\n1. Calculate the number of cakes the baker had after selling 105 cakes:\n   Initial cakes = 121\n   Cakes sold = 105\n   Remaining cakes = Initial cakes - Cakes sold\n   Remaining cakes = 121 - 105\n   Remaining cakes = 16\n\n2. Add the new cakes bought to the remaining cakes:\n   New cakes bought = 170\n   Total cakes now = Remaining cakes + New cakes bought\n   Total cakes now = 16 + 170\n   Total cakes now = 186\n\n3. The baker still has 186 cakes.\n\n#### 186",
+      "score": 1.0
+    },
+    {
+      "index": 22,
+      "input": "An industrial machine worked for 5 minutes. It can make 4 shirts a minute. How many shirts did machine make?",
+      "target": 20.0,
+      "output": "To solve this problem, we need to multiply the number of minutes the machine worked by the number of shirts it can make per minute.\n\nStep 1: Identify the given information\n- Time worked = 5 minutes\n- Shirts made per minute = 4\n\nStep 2: Multiply the time worked by the shirts made per minute\nShirts made = Time worked * Shirts made per minute\n= 5 * 4\n= 20\n\nTherefore, the machine made 20 shirts. \n\n#### 20",
+      "score": 1.0
+    },
+    {
+      "index": 23,
+      "input": "The bananas in Philip's collection are organized into groups of size 18. If there are a total of 180 bananas in Philip's banana collection How many groups are there?",
+      "target": 10.0,
+      "output": "To solve this problem, we need to divide the total number of bananas (180) by the group size (18).\n\nStep 1: Divide the total number of bananas (180) by the group size (18)\n\n180 \u00f7 18 = ?\n\nWe can do this division:\n\n180 \u00f7 18 = 10\n\nSo, there are 10 groups of bananas in Philip's collection.\n\n#### 10",
+      "score": 1.0
+    },
+    {
+      "index": 24,
+      "input": "There were some birds sitting on the fence. 4 more birds came to join them. If there are a total of 5 birds on the fence now How many birds had been sitting on the fence at the start?",
+      "target": 1.0,
+      "output": "To solve this problem, we need to find out how many birds were initially sitting on the fence.\n\nLet's say x is the number of birds that were initially sitting on the fence. We know that 4 more birds came to join them, and now there are a total of 5 birds on the fence.\n\nWe can set up an equation based on this information:\n\nx + 4 = 5\n\nTo solve for x, we need to isolate it on one side of the equation. We can do this by subtracting 4 from both sides of the equation:\n\nx = 5 - 4\nx = 1\n\nSo, there was only 1 bird initially sitting on the fence.\n\n#### 1",
+      "score": 1.0
+    },
+    {
+      "index": 25,
+      "input": "Jerry had 3 action figures on a shelf in his room. Later he added 4 more action figures to the shelf and removed some of the old ones. If there are 6 action figures on his shelf now How many action figures did he remove from the shelf?",
+      "target": 1.0,
+      "output": "To solve this problem, we need to find out how many action figures Jerry had initially and then subtract the number of action figures he has now.\n\nStep 1: Find the initial number of action figures.\nJerry had 3 action figures on a shelf initially.\n\nStep 2: Add the new action figures.\nHe added 4 more action figures, so now he has:\n3 (initial) + 4 (new) = 7\n\nHowever, we know that Jerry now has 6 action figures. This means that some of the old ones were removed.\n\nStep 3: Find out how many action figures were removed.\nTo find this out, subtract the current number of action figures from the total after adding new ones:\n7 (total after adding) - 6 (current) = 1\n\nTherefore, Jerry removed 1 action figure from the shelf. \n\n#### 1",
+      "score": 1.0
+    },
+    {
+      "index": 26,
+      "input": "Danny collects bottle caps and wrappers. He found 65 wrappers and 5 bottle caps at the park. Now he has 31 bottle caps and 9 wrappers in his collection. How many more wrappers than bottle caps did danny find at the park?",
+      "target": 60.0,
+      "output": "To solve this problem, we need to first find out how many wrappers and bottle caps Danny found at the park.\n\nWe know that initially, Danny had 65 - 9 = 56 wrappers (since he now has 9 wrappers) and 31 - 5 = 26 bottle caps (since he now has 31 bottle caps).\n\nNow we can subtract the initial number of bottle caps from the initial number of wrappers to find out how many more wrappers than bottle caps Danny found at the park.\n\nSo, 56 - 26 = 30\n\n#### 30",
+      "score": 0.0
+    },
+    {
+      "index": 27,
+      "input": "Because of the decision Sofia asked the students to suggest specific types of food from a total of 66 choices. If 450 students suggested adding mashed potatoes 38 suggested adding bacon to the menu and the rest did not participate How many students participated in the suggestion of new food items?",
+      "target": 488.0,
+      "output": "To solve this problem, we need to find out how many students participated in suggesting new food items.\n\nFirst, let's add up the number of students who suggested specific types of food. We know that 450 students suggested mashed potatoes and 38 suggested bacon. To find the total number of students who suggested new food items, we can simply add these two numbers together:\n\n450 (mashed potatoes) + 38 (bacon) = 488\n\nHowever, this is not the correct answer because it includes all the students who participated in the suggestion. We need to subtract the number of students who did not participate from the total number of choices.\n\nWe know that there were a total of 66 choices and we don't know how many students did not participate. However, we can find out by subtracting the number of students who suggested mashed potatoes and bacon from the total number of choices:\n\n66 (total choices) - 488 (students who suggested new food items) = ?\n\nHowever, this is incorrect because it would result in a negative number. We need to re-evaluate our approach.\n\nLet's try again. We know that there were 450 students who suggested mashed potatoes and 38 students who suggested bacon. To find the total number of students who participated in suggesting new food items, we can subtract the number of students who did not participate from the total number of choices:\n\nTotal number of choices = 66\nNumber of students who suggested mashed potatoes = 450\nNumber of students who suggested bacon = 38\n\nSince we don't know how many students did not participate, let's assume that all the remaining choices were not participated by. We can find out the number of remaining choices as follows:\n\nRemaining choices = Total number of choices - Number of students who suggested mashed potatoes - Number of students who suggested bacon\n= 66 - 450 - 38\n= -422\n\nThis is incorrect because we cannot have a negative number of choices.\n\nLet's re-evaluate our approach again. We know that there were 450 students who suggested mashed potatoes and 38 students who suggested bacon. To find the total number of students who participated in suggesting new food items, we can assume that all the remaining choices were not participated by. However, this would mean that the number of students who did not participate is equal to the number of remaining choices.\n\nSince we cannot have a negative number of choices, let's try another approach. We know that there were 450 students who suggested mashed potatoes and 38 students who suggested bacon. To find",
+      "score": 0.0
+    },
+    {
+      "index": 28,
+      "input": "Matthew gave equal numbers of crackers and cakes to his 28 friends. If he had 13 crackers and 15 cakes initially How many crackers and cakes did each person eat?",
+      "target": 1.0,
+      "output": "To solve this problem, we need to find out how many crackers and cakes Matthew gave to each friend.\n\nFirst, let's calculate the total number of crackers and cakes Matthew had initially:\n\nCrackers = 13\nCakes = 15\n\nSince he gave equal numbers of crackers and cakes to his friends, we can assume that he divided the total number of crackers and cakes by 2 (since there are 28 friends).\n\nTotal crackers given = 13 / 2 = 6.5\nTotal cakes given = 15 / 2 = 7.5\n\nSince you can't divide a cracker or a cake into fractions, we'll assume that Matthew gave 6 crackers and 7 cakes to each friend (rounding down the fractions).\n\nNow, let's calculate how many crackers and cakes each person ate:\n\nCrackers per person = 6\nCakes per person = 7\n\nSo, each person ate 6 crackers and 7 cakes.\n\n#### 6, 7",
+      "score": 0.0
+    },
+    {
+      "index": 29,
+      "input": "A grocery store had 49 bottles of regular soda, 40 bottles of diet soda and 6 bottles of lite soda. How many bottles of regular soda and diet soda did they have altogether?",
+      "target": 89.0,
+      "output": "To solve the problem, we need to add the number of bottles of regular soda and diet soda.\n\nStep 1: Identify the number of bottles of regular soda: 49\nStep 2: Identify the number of bottles of diet soda: 40\n\nStep 3: Add the two numbers together:\n49 (regular soda) + 40 (diet soda) = 89\n\nTherefore, the grocery store had 89 bottles of regular soda and diet soda altogether.\n\n#### 89",
+      "score": 1.0
+    },
+    {
+      "index": 30,
+      "input": "Dan has $ 3. He bought 2 candy bar for $ 4, each one costing the same amount of money. How much did each candy bar cost?",
+      "target": 2.0,
+      "output": "To solve this problem, we need to find out how much each candy bar costs. Let's break it down step by step:\n\n1. Dan has $3 initially.\n2. He bought 2 candy bars for a total of $4.\n\nSince the candy bars are the same price, we can set up an equation to represent the situation:\n\nLet x be the cost of one candy bar.\n\nThe total cost of 2 candy bars is $4, so we can write the equation:\n\n2x = 4\n\nTo solve for x, we can divide both sides by 2:\n\nx = 4/2\nx = 2\n\nSo, each candy bar costs $2.",
+      "score": 1.0
+    },
+    {
+      "index": 31,
+      "input": "Tiffany was collecting cans for recycling. On monday she had 7 bags of cans. The next day she found 12 more bags worth of cans. How many more bags did she find on the next day than she had on monday?",
+      "target": 5.0,
+      "output": "To solve this problem, we need to subtract the number of bags Tiffany had on Monday from the number of bags she found on Tuesday.\n\nStep 1: Identify the number of bags Tiffany had on Monday.\nTiffany had 7 bags of cans on Monday.\n\nStep 2: Identify the number of bags Tiffany found on Tuesday.\nTiffany found 12 more bags worth of cans on Tuesday.\n\nStep 3: Subtract the number of bags she had on Monday from the number of bags she found on Tuesday to find out how many more bags she found on Tuesday than she had on Monday.\n12 (bags found on Tuesday) - 7 (bags on Monday) = 5\n\nTherefore, Tiffany found 5 more bags on Tuesday than she had on Monday.\n\n#### 5",
+      "score": 1.0
+    },
+    {
+      "index": 32,
+      "input": "There were 15 roses and 62 orchids in the vase. Jessica cut some more roses and orchids from her flower garden. There are now 17 roses and 96 orchids in the vase. How many roses did she cut?",
+      "target": 2.0,
+      "output": "To solve this problem, we need to find out how many roses Jessica cut.\n\nStep 1: Find the initial number of roses that were in the vase.\nInitial number of roses = 15\n\nStep 2: Find the final number of roses that are in the vase after Jessica cut some more.\nFinal number of roses = 17\n\nStep 3: Subtract the initial number of roses from the final number of roses to find out how many roses Jessica cut.\nNumber of roses cut = Final number of roses - Initial number of roses\n= 17 - 15\n= 2\n\nTherefore, Jessica cut 2 roses. \n\n#### 2",
+      "score": 1.0
+    },
+    {
+      "index": 33,
+      "input": "There are some baskets of peaches. Each basket has 4 red peaches and 3 green peaches. If there are a total of 7 peaches in all baskets How many baskets of peaches are there?",
+      "target": 1.0,
+      "output": "To solve this problem, we need to find the number of baskets based on the total number of peaches.\n\nLet's denote the number of baskets as 'x'. Since each basket has 4 red peaches and 3 green peaches, the total number of peaches in one basket is:\n\n4 (red) + 3 (green) = 7\n\nSince there are a total of 7 peaches in all baskets, we can set up an equation to represent this situation:\n\nx (number of baskets) * 7 (peaches per basket) = 7 (total number of peaches)\n\nTo find the value of 'x', we can divide both sides of the equation by 7:\n\nx = 7 / 7\nx = 1\n\nTherefore, there is only 1 basket of peaches. \n\n#### 1",
+      "score": 1.0
+    },
+    {
+      "index": 34,
+      "input": "There were 78 dollars in Olivia's wallet. She spent 15 dollars at a supermarket. How much money does she have left?",
+      "target": 63.0,
+      "output": "To solve this problem, we need to subtract the amount of money Olivia spent from the initial amount of money she had.\n\nStep 1: Identify the initial amount of money Olivia had: $78\nStep 2: Identify the amount of money Olivia spent: $15\nStep 3: Subtract the amount of money Olivia spent from the initial amount of money she had:\n$78 - $15 = $63\n\nTherefore, Olivia has $63 left.\n\n#### 63",
+      "score": 1.0
+    },
+    {
+      "index": 35,
+      "input": "Jack received 6 emails in the morning, 3 emails in the afternoon and some more in the evening. If he received a total of 10 emails in the day How many emails did Jack receive in the afternoon?",
+      "target": 1.0,
+      "output": "To solve this problem, we need to find out how many emails Jack received in the evening.\n\nWe know that Jack received a total of 10 emails in the day and we also know that he received 6 emails in the morning and 3 emails in the afternoon. \n\nLet's denote the number of emails Jack received in the evening as x.\n\nThe equation can be set up as follows:\n\n6 (morning) + 3 (afternoon) + x (evening) = 10\n\nCombine like terms:\n\n9 + x = 10\n\nSubtract 9 from both sides:\n\nx = 1\n\nTherefore, Jack received 1 email in the evening.\n\n#### 1",
+      "score": 1.0
+    },
+    {
+      "index": 36,
+      "input": "Dan has $ 4. He bought a candy bar for $ 8. Then his friend have him $ 5 How much money is left?",
+      "target": 1.0,
+      "output": "To solve this problem, we need to follow the steps:\n\n1. Dan starts with $4.\n2. He spends $8 on a candy bar, so we subtract $8 from $4:\n$4 - $8 = -$4 (he now owes $4)\n3. Then, his friend gives him $5, so we add $5 to -$4:\n-$4 + $5 = $1\n\nSo, Dan has $1 left.\n\n#### 1",
+      "score": 1.0
+    },
+    {
+      "index": 37,
+      "input": "After eating a hearty meal they went to see the Buckingham palace. There, Rachel learned that 703 visitors came to the Buckingham palace on the previous day. If there were 246 visitors on that day How many visited the Buckingham palace within 25 days?",
+      "target": 949.0,
+      "output": "To solve this problem, we need to find out how many visitors came to the Buckingham palace in the last 25 days.\n\nFirst, let's calculate the number of visitors who came in the previous 24 days (excluding the current day). We can do this by subtracting the number of visitors on the previous day from the total number of visitors:\n\nTotal visitors = 703\nVisitors on the previous day = 246\n\nVisitors in the last 24 days = Total visitors - Visitors on the previous day\n= 703 - 246\n= 457\n\nNow, we need to add the current day's visitors to find out the total number of visitors in the last 25 days:\n\nTotal visitors in the last 25 days = Visitors in the last 24 days + Visitors on the current day\n= 457 + 246\n= 703\n\nHowever, this is not correct. We need to subtract the number of visitors on the previous day from the total number of visitors to find out how many visitors came in the last 25 days.\n\nTotal visitors = 703\nVisitors on the previous day = 246\n\nVisitors in the last 25 days = Total visitors - Visitors on the previous day\n= 703 - 246\n= 457\n\nNow, we need to subtract the number of visitors on the current day from the total number of visitors to find out how many visitors came in the last 24 days:\n\nTotal visitors = 703\nVisitors on the current day = 246\n\nVisitors in the last 24 days = Total visitors - Visitors on the current day\n= 703 - 246\n= 457\n\nNow, we need to subtract the number of visitors on the previous day from the total number of visitors to find out how many visitors came in the last 25 days:\n\nTotal visitors = 703\nVisitors on the previous day = 246\n\nVisitors in the last 25 days = Total visitors - Visitors on the previous day\n= 703 - 246\n= 457\n\nNow, we need to subtract the number of visitors on the current day from the total number of visitors to find out how many visitors came in the last 24 days:\n\nTotal visitors = 703\nVisitors on the current day = 246\n\nVisitors in the last 25 days = Total visitors - Visitors on the previous day\n= 703 - 246\n= 457\n\nNow, we need to subtract the number of visitors on the previous day from the",
+      "score": 0.0
+    },
+    {
+      "index": 38,
+      "input": "For Gwen's birthday she received 5 dollars from her dad. Her mom gave her 7 more dollars. If she spent 4 dollars. How much more money did she receive from her mom than she did from her dad?",
+      "target": 2.0,
+      "output": "To solve the problem, we need to find out how much more money Gwen received from her mom compared to her dad.\n\nStep 1: Calculate the total amount of money Gwen received from both her parents.\nGwen's dad gave her $5 and her mom gave her $7. So, the total amount is:\n$5 + $7 = $12\n\nStep 2: Subtract the amount Gwen spent from the total amount she received to find out how much money she has left.\nShe spent $4, so we subtract that from the total amount:\n$12 - $4 = $8\n\nStep 3: Calculate the difference between the amount Gwen received from her mom and the amount she received from her dad.\nThe amount Gwen received from her mom is $7 and the amount she received from her dad is $5. To find out how much more money she received from her mom, we subtract the smaller amount from the larger amount:\n$7 - $5 = $2\n\nTherefore, Gwen received $2 more money from her mom than she did from her dad.\n\n#### 2",
+      "score": 1.0
+    },
+    {
+      "index": 39,
+      "input": "There are 142 bananas and 356 oranges in Philip's collection. If the bananas are organized into 47 groups and oranges are organized into 178 groups How big is each group of oranges?",
+      "target": 2.0,
+      "output": "To find the size of each group of oranges, we need to divide the total number of oranges by the number of groups.\n\nTotal number of oranges = 356\nNumber of groups = 178\n\nSize of each group = Total number of oranges / Number of groups\n= 356 / 178\n= 2\n\n#### 2",
+      "score": 1.0
+    },
+    {
+      "index": 40,
+      "input": "There are 8 different books and 5 different movies in the ' crazy silly school ' series. If you read 19 of the movies and watched 16 of the books How many more movies than books have you read?",
+      "target": 3.0,
+      "output": "To solve this problem, we need to find out how many more movies than books have been read.\n\nStep 1: Identify the number of movies and books that have been read.\n- Number of movies read = 19\n- Number of books watched = 16 (Note: The problem states \"watched\", but it's likely a typo and should be \"read\". If it was indeed meant to say \"watched\", we would need more information about the context. However, based on the provided numbers, I will proceed with the assumption that it's actually \"read\".)\n\nStep 2: Since there are only 5 different books in total, and you've watched 16 of them, this is not possible. The problem statement seems to be inconsistent.\n\nHowever, if we assume that the number of books read is indeed 16 (which doesn't make sense given the context), we can proceed with a hypothetical solution:\n\nStep 3: Calculate the difference between the number of movies and books read.\n- Difference = Number of movies read - Number of books watched\n- Difference = 19 - 16\n- Difference = 3\n\nHowever, please note that this solution is based on an assumption due to the inconsistency in the problem statement.\n\n#### 3",
+      "score": 1.0
+    },
+    {
+      "index": 41,
+      "input": "Mary is baking a cake. The recipe calls for 12 cups of flour and 5 cups of sugar. She already put in some cups of flour. If she still needs 2 more cups of flour How many cups of flour did she put in?",
+      "target": 10.0,
+      "output": "To solve the problem, we need to find out how many cups of flour Mary has already put in.\n\nLet's start by identifying what we know:\n\n* The recipe calls for 12 cups of flour.\n* Mary still needs 2 more cups of flour.\n* We want to find out how many cups of flour she has already put in.\n\nSince Mary still needs 2 more cups of flour, that means the amount she has already put in is equal to the total amount needed minus the amount she still needs. \n\nLet's set up an equation:\n\nTotal amount needed = Amount already put in + Amount still needed\n12 = x + 2\n\nwhere x is the amount Mary has already put in.\n\nTo solve for x, we can subtract 2 from both sides of the equation:\n\nx = 12 - 2\nx = 10\n\nSo, Mary has already put in 10 cups of flour. \n\n#### 10",
+      "score": 1.0
+    },
+    {
+      "index": 42,
+      "input": "Danny collects bottle caps and wrappers. He found 46 wrappers and 50 bottle caps at the park. Now he has 21 bottle caps and 52 wrappers in his collection. How many more bottle caps than wrappers did danny find at the park?",
+      "target": 4.0,
+      "output": "To solve this problem, we need to first find out how many bottle caps and wrappers Danny found at the park.\n\nWe know that initially, Danny had 46 wrappers and 50 bottle caps. After finding some more, he now has 52 wrappers and 21 bottle caps. \n\nLet's start by finding the number of wrappers Danny found at the park:\n\nInitial wrappers = 46\nCurrent wrappers = 52\nWrappers found at the park = Current wrappers - Initial wrappers\n= 52 - 46\n= 6\n\nNow, let's find out how many bottle caps Danny found at the park:\n\nInitial bottle caps = 50\nCurrent bottle caps = 21\nBottle caps found at the park = Initial bottle caps - Current bottle caps\n= 50 - 21\n= 29\n\nNow that we know how many wrappers and bottle caps Danny found, we can find out how many more bottle caps than wrappers he found:\n\nDifference = Bottle caps found at the park - Wrappers found at the park\n= 29 - 6\n= 23\n\n#### 23",
+      "score": 0.0
+    },
+    {
+      "index": 43,
+      "input": "Luke played 177 rounds of a trivia game. If he gained 46 points in each round How many points did he score in the game?",
+      "target": 8142.0,
+      "output": "To solve this problem, we need to multiply the number of rounds by the points gained per round.\n\nNumber of rounds = 177\nPoints gained per round = 46\n\nTotal points scored = Number of rounds x Points gained per round\n= 177 x 46\n= 8,142\n\n#### 8,142",
+      "score": 0.0
+    },
+    {
+      "index": 44,
+      "input": "3 birds and 4 storks were sitting on the fence. 2 more birds came to join them. How many more birds than storks are sitting on the fence?",
+      "target": 1.0,
+      "output": "To solve this problem, we need to find out how many birds and storks are sitting on the fence after the new birds arrived.\n\nInitially, there were:\n- 3 birds\n- 4 storks\n\n2 more birds came to join them. So, the total number of birds is now:\n3 + 2 = 5 birds\n\nThe number of storks remains the same:\n4 storks\n\nNow, we need to find out how many more birds than storks are sitting on the fence. To do this, we subtract the number of storks from the number of birds:\n5 (birds) - 4 (storks) = 1\n\nTherefore, there is 1 more bird than stork sitting on the fence.\n\n#### 1",
+      "score": 1.0
+    },
+    {
+      "index": 45,
+      "input": "The grasshopper, the frog and the mouse had a jumping contest. The grasshopper jumped 9 inches. The mouse jumped 3 inches lesser than the frog who jumped 33 inches farther than the grasshopper. How far did the mouse jump?",
+      "target": 39.0,
+      "output": "To solve this problem, we need to follow the steps:\n\n1. Find out how much farther the frog jumped compared to the grasshopper:\n   The frog jumped 33 inches farther than the grasshopper.\n   Since the grasshopper jumped 9 inches, \n   the frog jumped 9 + 33 = 42 inches.\n\n2. Now we know that the mouse jumped 3 inches lesser than the frog who jumped 42 inches.\n   So, to find out how far the mouse jumped, subtract 3 from 42:\n   42 - 3 = 39\n\nTherefore, the mouse jumped 39 inches.\n\n#### 39",
+      "score": 1.0
+    },
+    {
+      "index": 46,
+      "input": "Zachary did 35 push-ups and 3 crunches in gym class today. David did 58 more push-ups but 87 less crunches than zachary. How many more push-ups than crunches did Zachary do?",
+      "target": 32.0,
+      "output": "To solve the problem, we need to first find out how many push-ups and crunches David did.\n\nDavid did 58 more push-ups than Zachary, who did 35 push-ups. So, David did:\n35 + 58 = 93 push-ups\n\nDavid did 87 less crunches than Zachary, who did 3 crunches. So, David did:\n3 - 87 = -84 (but since we can't have a negative number of crunches, this means David didn't do any crunches)\n\nNow that we know how many push-ups and crunches each person did, we can find out how many more push-ups than crunches Zachary did. Since David didn't do any crunches, we only need to compare the number of push-ups he did to the number of crunches Zachary did:\n93 (David's push-ups) - 3 (Zachary's crunches) = 90\n\nSo, Zachary did 90 more push-ups than crunches.\n\n#### 90",
+      "score": 0.0
+    },
+    {
+      "index": 47,
+      "input": "Jack received 4 emails in the morning, 5 emails in the afternoon and 8 emails in the evening. How many emails did Jack receive in the afternoon and evening?",
+      "target": 13.0,
+      "output": "To solve this problem, we need to find the total number of emails Jack received in the afternoon and evening.\n\nStep 1: Identify the number of emails received in the afternoon and evening.\nEmails received in the afternoon = 5\nEmails received in the evening = 8\n\nStep 2: Add the number of emails received in the afternoon and evening to find the total.\nTotal emails received in the afternoon and evening = Emails received in the afternoon + Emails received in the evening\n= 5 + 8\n= 13\n\nTherefore, Jack received a total of 13 emails in the afternoon and evening.\n\n#### 13",
+      "score": 1.0
+    },
+    {
+      "index": 48,
+      "input": "Jerry had 7 action figures on a shelf in his room. Later he added some more action figures to the shelf and removed 10 of the old ones. If there are 8 action figures on his shelf now How many action figures did he add to the shelf?",
+      "target": 11.0,
+      "output": "To solve this problem, we need to find out how many action figures Jerry added to the shelf.\n\nLet's start by using the information that Jerry had 7 action figures initially and then removed 10 of the old ones. We can represent the number of action figures he had after removing some as x.\n\nWe know that Jerry ended up with 8 action figures on his shelf now, so we can set up an equation:\n\nx - 10 = 8\n\nTo solve for x, we need to add 10 to both sides of the equation:\n\nx = 8 + 10\nx = 18\n\nThis means that after removing 10 old action figures, Jerry had a total of 18 action figures on his shelf.\n\nNow, let's find out how many new action figures he added. We can do this by subtracting the initial number of action figures (7) from the total number of action figures after removal (18):\n\nNumber of action figures added = x - 7\n= 18 - 7\n= 11\n\nTherefore, Jerry added 11 action figures to his shelf.\n\n#### 11",
+      "score": 1.0
+    },
+    {
+      "index": 49,
+      "input": "Julia played tag with 12 kids on monday. She played tag with 14 kids on tuesday. She spent a total of 34 hours to play tag on both days. How many kids did she play with altogether?",
+      "target": 26.0,
+      "output": "To solve this problem, we need to find the total number of kids Julia played with.\n\nLet's start by finding out how many hours Julia spent playing with each group of kids:\n\nOn Monday, Julia played with 12 kids for some unknown amount of time. Let's call this time 'x' hours.\n\nOn Tuesday, Julia played with 14 kids for some unknown amount of time. Again, let's call this time 'y' hours.\n\nWe know that the total number of hours spent playing tag is 34. So we can set up an equation:\n\nx + y = 34\n\nHowever, we don't know how many hours each group of kids took to play with Julia. We do know that she played with a different number of kids on each day.\n\nLet's think about this problem in another way. If Julia spent the same amount of time playing with each group of kids, then the total number of hours would be the same for both days. However, we know that she didn't spend the same amount of time playing with each group of kids.\n\nSo let's try to find a different approach. We can set up an equation based on the fact that Julia played with 12 kids on Monday and 14 kids on Tuesday:\n\nNumber of hours spent playing with 12 kids * Number of times she played with 12 kids = Total number of hours spent playing with 12 kids\nNumber of hours spent playing with 14 kids * Number of times she played with 14 kids = Total number of hours spent playing with 14 kids\n\nSince we don't know how many times Julia played with each group of kids, let's call the number of times she played with 12 kids 'a' and the number of times she played with 14 kids 'b'. Then:\n\n12a + 14b = 34\n\nHowever, without more information about how many times Julia played with each group of kids, we can't find a unique solution to this equation.\n\nWait! Let's think about it again. We know that the total number of hours spent playing tag is 34. If Julia played with 12 kids for some unknown amount of time and then played with 14 kids for some other unknown amount of time, then she must have played with each group of kids at least once.\n\nLet's try to find a different approach. We can set up an equation based on the fact that Julia played with both groups of kids:\n\nNumber of hours spent playing with 12 kids * Number of times she played with 12 kids",
+      "score": 0.0
+    },
+    {
+      "index": 50,
+      "input": "Nell collects cards. She had 309 baseball cards and 356 Ace cards. She gave some of her cards to Jeff and now has 415 baseball cards and Ace cards left. How many more baseball cards than Ace cards does Nell have?",
+      "target": 266.0,
+      "output": "To solve this problem, we need to find out how many baseball cards and Ace cards Nell had initially, and then subtract the number of each type of card she gave away.\n\nStep 1: Find the initial number of baseball cards.\nNell has 415 baseball cards left. To find the initial number of baseball cards, we add the number of cards she gave away to the number of cards she has now:\nInitial baseball cards = Current baseball cards + Cards given away\nWe don't know how many cards Nell gave away yet, so let's call that x.\nInitial baseball cards = 415 + x\n\nStep 2: Find the initial number of Ace cards.\nNell has 356 Ace cards initially.\n\nStep 3: Set up an equation to find out how many cards Nell gave away in total.\nWe know that the total number of cards she had initially is equal to the sum of the current number of baseball cards and Ace cards:\nInitial total = Current baseball cards + Current Ace cards\nInitial total = (415 + x) + 356\n\nStep 4: Find out how many cards Nell gave away in total.\nWe know that Nell has 309 baseball cards initially, so we can set up an equation to find the number of cards she gave away:\n(415 + x) - Initial baseball cards = Cards given away\nSubstituting the value of initial baseball cards from step 1:\n(415 + x) - (415 + x) = x\n\nHowever, this doesn't help us. We need another approach.\n\nStep 4: Find out how many cards Nell gave away in total.\nWe know that Nell has 415 baseball cards and 356 Ace cards now. To find the initial number of each type of card, we can set up an equation:\nInitial total = Current baseball cards + Current Ace cards\n309 + 356 = (415 + x) + 356\n\nStep 5: Solve for x.\nNow we have two equations with two variables:\n(415 + x) + 356 = 309 + 356\nCombine like terms:\n(415 + x) + 356 = 665\nSubtract 415 from both sides:\nx + 356 = 250\nSubtract 356 from both sides:\nx = -106\n\nHowever, this doesn't make sense. We can't have a negative number of cards.\n\nLet's try another approach.\n\nStep 4: Find out how many baseball cards and Ace cards Nell gave away.",
+      "score": 0.0
+    }
+  ]
+}
