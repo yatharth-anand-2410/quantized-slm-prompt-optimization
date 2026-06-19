@@ -1,0 +1,32 @@
+{
+  "task": "financial",
+  "target_model": "llama3.2:latest",
+  "meta_model": "gemma2:2b",
+  "baseline_prompt": "You are a precise data extraction agent. Extract financial entities from the text below into a JSON object.\nThe keys of the JSON object must be the entity categories present in the text, and the values must be lists of extracted strings.\nOnly extract categories that actually appear in the text. Do not output any key with a null or empty list.\n\nSupported categories are:\nCompany, Date, Location, Money, Person, Product, Quantity\n\nDo not output any introductory or explanatory text. Output ONLY valid raw JSON.\n\nText: {input}\n\nJSON:",
+  "evolved_prompt": "You are a financial entity extractor. Extract financial entities from the provided text into JSON format. \nJSON keys will be specific categories (Company, Date, Location, Money, Person, Product, Quantity) and values will be lists of extracted strings matching these categories. Only output valid JSON with non-empty lists for each key.\n\n{input}\n\nJSON: \n---",
+  "baseline_test_score": 55.8066933066933,
+  "evolved_test_score": 64.94361194361194,
+  "improvement": 9.136918636918644,
+  "history": [
+    {
+      "generation": 0,
+      "prompt": "You are a precise data extraction agent. Extract financial entities from the text below into a JSON object.\nThe keys of the JSON object must be the entity categories present in the text, and the values must be lists of extracted strings.\nOnly extract categories that actually appear in the text. Do not output any key with a null or empty list.\n\nSupported categories are:\nCompany, Date, Location, Money, Person, Product, Quantity\n\nDo not output any introductory or explanatory text. Output ONLY valid raw JSON.\n\nText: {input}\n\nJSON:",
+      "score": 71.98179271708683
+    },
+    {
+      "generation": 1,
+      "prompt": "You are a financial entity extractor. Extract financial entities from the provided text into JSON format. \nJSON keys will be specific categories (Company, Date, Location, Money, Person, Product, Quantity) and values will be lists of extracted strings matching these categories. Only output valid JSON with non-empty lists for each key.\n\n{input}\n\nJSON: \n---",
+      "score": 79.56898656898656
+    },
+    {
+      "generation": 2,
+      "prompt": "You are a financial entity extractor. Extract financial entities from the provided text into JSON format. \nJSON keys will be specific categories (Company, Date, Location, Money, Person, Product, Quantity) and values will be lists of extracted strings matching these categories. Only output valid JSON with non-empty lists for each key.\n\n{input}\n\nJSON: \n---",
+      "score": 79.56898656898656
+    },
+    {
+      "generation": 3,
+      "prompt": "You are a financial entity extractor. Extract financial entities from the provided text into JSON format. \nJSON keys will be specific categories (Company, Date, Location, Money, Person, Product, Quantity) and values will be lists of extracted strings matching these categories. Only output valid JSON with non-empty lists for each key.\n\n{input}\n\nJSON: \n---",
+      "score": 79.56898656898656
+    }
+  ]
+}
