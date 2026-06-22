@@ -1,0 +1,1030 @@
+{
+  "model": "llama3.2:3b-instruct-q8_0",
+  "task": "financial",
+  "limit": 50,
+  "metric": "F1 Score",
+  "score_percentage": 60.118037518037525,
+  "results": [
+    {
+      "index": 1,
+      "input": "Albertsons and Rite Aid called off the planned merger after several advisory firms recommended voting against the proposal .",
+      "target": {
+        "Company": [
+          "Albertsons",
+          "Rite Aid"
+        ],
+        "Date": null,
+        "Location": null,
+        "Money": null,
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Date\": [\"after\"], \"Location\": [], \"Money\": [\"planned merger\", \"proposal\"], \"Person\": [\"Albertsons\", \"Rite Aid\"], \"Product\": [], \"Quantity\": []}",
+      "score": 0.0
+    },
+    {
+      "index": 2,
+      "input": "EU clears merger of Essilor , Luxottica without conditions",
+      "target": {
+        "Company": [
+          "Essilor",
+          "Luxottica"
+        ],
+        "Date": null,
+        "Location": [
+          "EU"
+        ],
+        "Money": null,
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Date\": [\"EU\", \"clears\"], \"Location\": [\"EU\"], \"Person\": [\"Essilor\", \"Luxottica\"]}",
+      "score": 0.25
+    },
+    {
+      "index": 3,
+      "input": "On February 21 , Broadcom reduced their offer to $117 billion in light of Qualcomms increased bid for NXP Semconductors. The deal was effectively blocked after US President Donald Trump blocked any deal based upon national security grounds .",
+      "target": {
+        "Company": [
+          "Broadcom",
+          "NXP Semconductors.",
+          "Qualcomms"
+        ],
+        "Date": [
+          "February 21"
+        ],
+        "Location": [
+          "US"
+        ],
+        "Money": [
+          "$117 billion"
+        ],
+        "Person": [
+          "Donald Trump"
+        ],
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"Broadcom\", \"Qualcomm\", \"NXP Semconductors\"], \"Date\": [\"February 21\"], \"Location\": [\"US\"], \"Money\": [\"$117 billion\"], \"Person\": [\"Donald Trump\"]}",
+      "score": 0.7142857142857143
+    },
+    {
+      "index": 4,
+      "input": "Bank of America to Buy Merrill Lynch for $50 Billion",
+      "target": {
+        "Company": [
+          "Bank of America",
+          "Merrill Lynch"
+        ],
+        "Date": null,
+        "Location": null,
+        "Money": [
+          "$50 Billion"
+        ],
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"Bank of America\", \"Merrill Lynch\"], \"Money\": [\"$50 Billion\"]}",
+      "score": 1.0
+    },
+    {
+      "index": 5,
+      "input": "Broadcom cuts Qualcomm offer to $117 billion after new NXP deal | Reuters",
+      "target": {
+        "Company": [
+          "Broadcom",
+          "NXP",
+          "Qualcomm",
+          "Reuters"
+        ],
+        "Date": null,
+        "Location": null,
+        "Money": [
+          "$117 billion"
+        ],
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\":[\"Broadcom\",\"Qualcomm\",\"NXP\"],\"Location\":\"\",\"Money\":[\"$117 billion\"]}\"",
+      "score": 0.888888888888889
+    },
+    {
+      "index": 6,
+      "input": "A British Company Weighs Buying Mci in $22 Billion Deal",
+      "target": {
+        "Company": [
+          "Mci"
+        ],
+        "Date": null,
+        "Location": [
+          "British"
+        ],
+        "Money": [
+          "$22 Billion"
+        ],
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"British\", \"Mci\"], \"Location\": [\"British\"], \"Money\": [\"$22 billion\"]}",
+      "score": 0.8571428571428571
+    },
+    {
+      "index": 7,
+      "input": "With the re - negotiated lower price of $21.5 billion between Johnson & Johnson and Guidant , Boston Scientific announced an unsolicited offer of $24.6 billion for Guidant ( an offer of $72 per share of Guidant , $36 in cash and a fixed number of Boston Scientific shares valued at $36 a share ) .",
+      "target": {
+        "Company": [
+          "Boston Scientific",
+          "Guidant",
+          "Johnson & Johnson"
+        ],
+        "Date": null,
+        "Location": null,
+        "Money": [
+          "$21.5 billion",
+          "$24.6 billion",
+          "$36",
+          "$36 a share",
+          "$72 per share"
+        ],
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"Johnson & Johnson\", \"Guidant\", \"Boston Scientific\"], \n\"Location\": [\"Boston\"], \n\"Money\": [\"$21.5 billion\", \"$24.6 billion\", \"$72\", \"$36\"]}",
+      "score": 0.75
+    },
+    {
+      "index": 8,
+      "input": "Time Warner rejects $80B offer from 21st Century Fox",
+      "target": {
+        "Company": [
+          "21st Century Fox",
+          "Time Warner"
+        ],
+        "Date": null,
+        "Location": null,
+        "Money": [
+          "$80B"
+        ],
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Date\": [\"Time Warner rejects $80B offer from 21st Century Fox\"], \"Money\": [\"$80B\"]}",
+      "score": 0.4
+    },
+    {
+      "index": 9,
+      "input": "INTERNATIONAL BUSINESS; Japan Banks to Merge , with Wider Effects",
+      "target": {
+        "Company": null,
+        "Date": null,
+        "Location": [
+          "Japan"
+        ],
+        "Money": null,
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"Japan\", \"International Business\"], \"Location\": [\"Japan\"]}",
+      "score": 0.5
+    },
+    {
+      "index": 10,
+      "input": "NEW PLAN IS FILED BY COLUMBIA GROUP; Merger of Four Subsidiaries , Acquisition of Another is Proposed to SEC HEARING SET FOR SEPT. 8 Consolidation to Form a New Corporation is Objective of Utilities Concern",
+      "target": {
+        "Company": [
+          "COLUMBIA GROUP;"
+        ],
+        "Date": [
+          "SEPT. 8"
+        ],
+        "Location": null,
+        "Money": null,
+        "Person": null,
+        "Product": null,
+        "Quantity": [
+          "Four"
+        ]
+      },
+      "output": "{\"Company\": [\"Columbia Group\"], \"Location\": [\"SEC\", \"Sept\"], \"Person\": [], \"Product\": [], \"Quantity\": [], \"Money\": []}",
+      "score": 0.0
+    },
+    {
+      "index": 11,
+      "input": "BB&T to buy SunTrust in biggest U.S. Bank deal in a decade",
+      "target": {
+        "Company": [
+          "BB&T",
+          "SunTrust",
+          "U.S. Bank"
+        ],
+        "Date": null,
+        "Location": null,
+        "Money": null,
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"BB&T\", \"SunTrust\"], \"Location\": [\"U.S.\"], \"Person\": [], \"Product\": [], \"Quantity\": [], \"Money\": []}",
+      "score": 0.6666666666666666
+    },
+    {
+      "index": 12,
+      "input": "Statoil to buy Norsk Hydro 's oil , gas business",
+      "target": {
+        "Company": [
+          "Norsk Hydro",
+          "Statoil"
+        ],
+        "Date": null,
+        "Location": null,
+        "Money": null,
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"Statoil\", \"Norsk Hydro\"], \"Location\": [\"oil\", \"gas business\"], \"Money\": [], \"Person\": [], \"Product\": [\"oil\", \"gas\"], \"Quantity\": []}",
+      "score": 0.5
+    },
+    {
+      "index": 13,
+      "input": "Pfizer made a hostile bid , just after the announcement of a $65 billion deal with American Home Products , the eventual purchase price would be in excess of $90 billion .",
+      "target": {
+        "Company": [
+          "American Home Products",
+          "Pfizer"
+        ],
+        "Date": null,
+        "Location": null,
+        "Money": [
+          "$65 billion",
+          "excess of $90 billion"
+        ],
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"Pfizer\", \"American Home Products\"], \"Date\": [], \"Location\": [], \"Money\": [\"$65 billion\", \"$90 billion\"], \"Person\": [], \"Product\": [], \"Quantity\": []}",
+      "score": 0.75
+    },
+    {
+      "index": 14,
+      "input": "United Technologies expects regulatory approvals by early 2020 for Raytheon deal",
+      "target": {
+        "Company": [
+          "Raytheon",
+          "United Technologies"
+        ],
+        "Date": [
+          "early 2020"
+        ],
+        "Location": null,
+        "Money": null,
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Date\":[\"early 2020\"],\"Money\":[\"United Technologies\",\"Raytheon\"]}\"",
+      "score": 0.3333333333333333
+    },
+    {
+      "index": 15,
+      "input": "BMS CEO Giovanni Caforio Lays out Reasoning for $74 Billion Acquisition of Celgene",
+      "target": {
+        "Company": [
+          "BMS",
+          "Celgene"
+        ],
+        "Date": null,
+        "Location": null,
+        "Money": [
+          "$74 Billion"
+        ],
+        "Person": [
+          "Giovanni Caforio"
+        ],
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"BMS\", \"Celgene\"], \"Person\": [\"Giovanni Caforio\"]}\"",
+      "score": 0.8571428571428571
+    },
+    {
+      "index": 16,
+      "input": "CVS to Buy Caremark in $21 Billion Deal",
+      "target": {
+        "Company": [
+          "CVS",
+          "Caremark"
+        ],
+        "Date": null,
+        "Location": null,
+        "Money": [
+          "$21 Billion"
+        ],
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"CVS\", \"Buy\"], \"Location\": [\"Caremark\"], \"Money\": [\"$21 Billion\"]}\"",
+      "score": 0.5714285714285715
+    },
+    {
+      "index": 17,
+      "input": "Allergan argued that the Valeant cash - and - stock offer , would hurt its shareholders , given the Canadian drug - maker 's history of cutting research and development spending at companies it acquires. Allergan would be acquired by Actavis plc and form Allergan plc .",
+      "target": {
+        "Company": [
+          "Actavis plc",
+          "Allergan",
+          "Allergan plc",
+          "Valeant"
+        ],
+        "Date": null,
+        "Location": [
+          "Canadian"
+        ],
+        "Money": null,
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\":[\"Allergan\",\"Actavis plc\",\"Allergan plc\",\"Valeant\"],\"Location\":[\"Canada\"]}\"",
+      "score": 0.8000000000000002
+    },
+    {
+      "index": 18,
+      "input": "ChemChina Clinches Its $43 Billion Takeover of Syngenta",
+      "target": {
+        "Company": [
+          "ChemChina",
+          "Syngenta"
+        ],
+        "Date": null,
+        "Location": null,
+        "Money": [
+          "$43 Billion"
+        ],
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"ChemChina\", \"Syngenta\"], \"Location\": [\"Switzerland\"], \"Money\": [\"$43 Billion\"]}",
+      "score": 0.8571428571428571
+    },
+    {
+      "index": 19,
+      "input": "London Stock Exchange in talks to buy Refinitiv for $27 billion",
+      "target": {
+        "Company": [
+          "London Stock Exchange",
+          "Refinitiv"
+        ],
+        "Date": null,
+        "Location": null,
+        "Money": [
+          "$27 billion"
+        ],
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Location\": [\"London\", \"Refinitiv\"], \"Company\": [\"London Stock Exchange\", \"Refinitiv\"], \"Date\": [], \"Money\": [\"$27 billion\"], \"Person\": [], \"Product\": [], \"Quantity\": []}",
+      "score": 0.7499999999999999
+    },
+    {
+      "index": 20,
+      "input": "Chrysler , Daimler Benz in auto merger deal - May 7 , 1998",
+      "target": {
+        "Company": [
+          "Chrysler",
+          "Daimler Benz"
+        ],
+        "Date": [
+          "May 7 , 1998"
+        ],
+        "Location": null,
+        "Money": null,
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"Chrysler\", \"Daimler Benz\"], \"Location\": [\"auto\"], \"Date\": [\"May 7\", \"1998\"]}",
+      "score": 0.5
+    },
+    {
+      "index": 21,
+      "input": "Chinese firms said to be in mega - merger talks. But do they have chemistry?",
+      "target": {
+        "Company": null,
+        "Date": null,
+        "Location": [
+          "Chinese"
+        ],
+        "Money": null,
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"Chinese firms\"], \"Person\": [\"they\", \"do\"]}\"",
+      "score": 0.0
+    },
+    {
+      "index": 22,
+      "input": "Hutchison , VimpelCom to Merge Italy Assets in $24 Billion Deal",
+      "target": {
+        "Company": [
+          "Hutchison",
+          "VimpelCom"
+        ],
+        "Date": null,
+        "Location": [
+          "Italy"
+        ],
+        "Money": [
+          "$24 Billion"
+        ],
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"Hutchison\", \"VimpelCom\"], \"Location\": [\"Italy\"], \"Money\": [\"$24 Billion\"]}\"",
+      "score": 1.0
+    },
+    {
+      "index": 23,
+      "input": "SoftBank completes $31 billion acquisition of ARM",
+      "target": {
+        "Company": [
+          "ARM",
+          "SoftBank"
+        ],
+        "Date": null,
+        "Location": null,
+        "Money": [
+          "$31 billion"
+        ],
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"SoftBank\"], \"Location\": [\"ARM\"], \"Money\": [\"$31 billion\"]}",
+      "score": 0.6666666666666666
+    },
+    {
+      "index": 24,
+      "input": "Charles Schwab to buy TD Ameritrade in a $26 billion all - stock deal",
+      "target": {
+        "Company": [
+          "Charles Schwab",
+          "TD Ameritrade"
+        ],
+        "Date": null,
+        "Location": null,
+        "Money": [
+          "$26 billion"
+        ],
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"Charles Schwab\", \"TD Ameritrade\"], \"Money\": [\"$26 billion\"]}",
+      "score": 1.0
+    },
+    {
+      "index": 25,
+      "input": "Xerox 's $33.5 billion ( 25.8 billion ) cash - and - stock offer to buy bigger rival HP was declined , with HP indicating it might make its own counter - offer for Xerox .",
+      "target": {
+        "Company": [
+          "HP",
+          "Xerox"
+        ],
+        "Date": null,
+        "Location": null,
+        "Money": [
+          "$33.5 billion ( 25.8 billion )"
+        ],
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"Xerox\", \"HP\"], \"Date\": [], \"Location\": [], \"Money\": [\"$33.5 billion\", \"25.8 billion\"], \"Person\": [], \"Product\": [], \"Quantity\": []}",
+      "score": 0.5714285714285715
+    },
+    {
+      "index": 26,
+      "input": "China Mobile acquired seven Chinese state - owned mobile communications businesses as part of a consolidation effort .",
+      "target": {
+        "Company": [
+          "China Mobile"
+        ],
+        "Date": null,
+        "Location": [
+          "Chinese"
+        ],
+        "Money": null,
+        "Person": null,
+        "Product": null,
+        "Quantity": [
+          "seven"
+        ]
+      },
+      "output": "{\"Company\": [\"China Mobile\"], \"Location\": [\"Chinese\", \"state-owned\", \"China\"]}\n\n{\"Money\": [], \"Person\": [], \"Product\": [], \"Quantity\": []}",
+      "score": 0.0
+    },
+    {
+      "index": 27,
+      "input": "GSK rejected $68 billion Unilever bid for consumer division",
+      "target": {
+        "Company": [
+          "GSK",
+          "Unilever"
+        ],
+        "Date": null,
+        "Location": null,
+        "Money": [
+          "$68 billion"
+        ],
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"GSK\", \"Unilever\"], \"Location\": [\"consumer division\"], \"Money\": [\"$68 billion\"]}",
+      "score": 0.8571428571428571
+    },
+    {
+      "index": 28,
+      "input": "Guidant battle ends in favor of Boston Scientific",
+      "target": {
+        "Company": [
+          "Boston Scientific",
+          "Guidant"
+        ],
+        "Date": null,
+        "Location": null,
+        "Money": null,
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"Guidant\", \"Boston Scientific\"], \"Location\": [\"Boston\"]}\"",
+      "score": 0.8
+    },
+    {
+      "index": 29,
+      "input": "Global Crossing lost out on acquiring US West after Qwest outbid them .",
+      "target": {
+        "Company": [
+          "Global Crossing",
+          "Qwest",
+          "US West"
+        ],
+        "Date": null,
+        "Location": null,
+        "Money": null,
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Date\":[\"Qwest\",\"US West\"]}\n\n{\"Location\":[\"Global Crossing\"]}",
+      "score": 0.0
+    },
+    {
+      "index": 30,
+      "input": "Oilfield services provider Halliburton and smaller rival Baker Hughes terminated their $28 billion merger deal after opposition from U.S. and European antitrust regulators .",
+      "target": {
+        "Company": [
+          "Baker Hughes",
+          "Halliburton"
+        ],
+        "Date": null,
+        "Location": [
+          "U.S.",
+          "European"
+        ],
+        "Money": [
+          "$28 billion"
+        ],
+        "Person": null,
+        "Product": [
+          "Oilfield services"
+        ],
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"Halliburton\", \"Baker Hughes\"], \"Location\": [\"U.S.\", \"Europe\"], \"Money\": [\"$28 billion\"]}",
+      "score": 0.7272727272727272
+    },
+    {
+      "index": 31,
+      "input": "AIG to buy American General - May 11 , 2001",
+      "target": {
+        "Company": [
+          "AIG",
+          "American General"
+        ],
+        "Date": [
+          "May 11 , 2001"
+        ],
+        "Location": null,
+        "Money": null,
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Date\":[\"May 11 , 2001\"],\"Money\":[\"AIG\",\"American General\"]}\"",
+      "score": 0.3333333333333333
+    },
+    {
+      "index": 32,
+      "input": "WWE , Endeavor - owned UFC to merge into $21 bln entertainment giant",
+      "target": {
+        "Company": [
+          "Endeavor",
+          "UFC",
+          "WWE"
+        ],
+        "Date": null,
+        "Location": null,
+        "Money": [
+          "$21 bln"
+        ],
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"WWE\", \"Endeavor\"], \"Location\": [\"UFC\"], \"Money\": [\"$21 bln\"]}",
+      "score": 0.75
+    },
+    {
+      "index": 33,
+      "input": "BP Offers $7 Billion for Standard Oil",
+      "target": {
+        "Company": [
+          "BP",
+          "Standard Oil"
+        ],
+        "Date": null,
+        "Location": null,
+        "Money": [
+          "$7 Billion"
+        ],
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"BP\", \"Standard Oil\"], \"Money\": [\"$7 Billion\"]}",
+      "score": 1.0
+    },
+    {
+      "index": 34,
+      "input": "Duke Realty Rejects Nearly $24 Billion Buyout Offer From Prologis",
+      "target": {
+        "Company": [
+          "Duke Realty",
+          "Prologis"
+        ],
+        "Date": null,
+        "Location": null,
+        "Money": [
+          "$24 Billion"
+        ],
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\":[\"Duke Realty\",\"Prologis\"],\"Location\":[\"United States\"],\"Money\":[\"$24 Billion\"]}\"",
+      "score": 0.8571428571428571
+    },
+    {
+      "index": 35,
+      "input": "Bayer completes acquisition of Schering AG",
+      "target": {
+        "Company": [
+          "Bayer",
+          "Schering AG"
+        ],
+        "Date": null,
+        "Location": null,
+        "Money": null,
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"Bayer\", \"Schering AG\"], \"Location\": [\"AG\"]}",
+      "score": 0.8
+    },
+    {
+      "index": 36,
+      "input": "Teva Offers to Buy Mylan for $40B",
+      "target": {
+        "Company": [
+          "Mylan",
+          "Teva"
+        ],
+        "Date": null,
+        "Location": null,
+        "Money": [
+          "$40B"
+        ],
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"Teva\", \"Mylan\"], \"Money\": [\"$40B\"]}",
+      "score": 1.0
+    },
+    {
+      "index": 37,
+      "input": "If the Chinese engineers don't arrive on time , then our cell line production will get impacted , Log9 's co-founder and director , Pankaj Sharma , told Reuters. We don't know by how much , but it can practically destabilise the production .",
+      "target": {
+        "Company": [
+          "Log9",
+          "Reuters."
+        ],
+        "Date": null,
+        "Location": [
+          "Chinese"
+        ],
+        "Money": null,
+        "Person": [
+          "Pankaj Sharma"
+        ],
+        "Product": [
+          "cell line"
+        ],
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"Log9\"], \"Person\": [\"Pankaj Sharma\"], \"Location\": [\"China\"]}",
+      "score": 0.5
+    },
+    {
+      "index": 38,
+      "input": "Tesla has had a red-carpet welcome from India for its proposal to invest in the country , while its largest rival in electric vehicles , China 's BYD , has been stopped cold by increased scrutiny from New Delhi .",
+      "target": {
+        "Company": [
+          "BYD",
+          "Tesla"
+        ],
+        "Date": null,
+        "Location": [
+          "India",
+          "New Delhi",
+          "China"
+        ],
+        "Money": null,
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\":[\"Tesla\",\"BYD\"],\"Location\":[\"India\",\"China\",\"New Delhi\"]}\"",
+      "score": 1.0
+    },
+    {
+      "index": 39,
+      "input": "BYD and its partner , privately held Megha Engineering and Infrastructures submitted a proposal to the Indian government in April to jointly build electric cars in India , Reuters reported earlier this month .",
+      "target": {
+        "Company": [
+          "BYD",
+          "Megha Engineering and Infrastructures",
+          "Reuters"
+        ],
+        "Date": [
+          "April",
+          "this month"
+        ],
+        "Location": [
+          "Indian",
+          "India"
+        ],
+        "Money": null,
+        "Person": null,
+        "Product": [
+          "electric cars"
+        ],
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"BYD\", \"Megha Engineering and Infrastructures\"], \"Location\": [\"India\"], \"Person\": [\"Reuters\"]}",
+      "score": 0.5
+    },
+    {
+      "index": 40,
+      "input": "In this blog post , we will delve into the intricacies of LLC formation , shed light on the associated costs , and offer valuable insights to help entrepreneurs make cost-effective decisions when establishing their business entity .",
+      "target": {
+        "Company": null,
+        "Date": null,
+        "Location": null,
+        "Money": null,
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"LLC\"], \"Location\": [], \"Money\": [\"costs\", \"decisions\"], \"Person\": [\"entrepreneurs\"], \"Product\": [], \"Quantity\": []}",
+      "score": 0.0
+    },
+    {
+      "index": 41,
+      "input": "...the Board of Directors of BLS E-Services Limited , subsidiary of the company at their meeting held today i.e. , Monday , June 26 , 2023 approved fund raising , subject to receipt of requisite approvals , marketconditions and other considerations , by way of an initial public offering , BLS International informed the stock exchanges .",
+      "target": {
+        "Company": [
+          "BLS E-Services Limited",
+          "BLS International"
+        ],
+        "Date": [
+          "Monday , June 26 , 2023"
+        ],
+        "Location": null,
+        "Money": null,
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\n\"Company\": [\"BLS E-Services Limited\"],\n\"Date\": [\"June 26, 2023\"],\n\"Location\": [],\n\"Money\": [],\n\"Person\": [],\n\"Product\": [],\n\"Quantity\": []\n}",
+      "score": 0.4
+    },
+    {
+      "index": 42,
+      "input": "This tie-up heralds TPREL 's strategic entry into Nepal 's rapidly evolving renewable energy sector and sets the stage for a quantum leap in accelerating Nepal 's shift toward sustainable energy , according to a statement .",
+      "target": {
+        "Company": [
+          "TPREL"
+        ],
+        "Date": null,
+        "Location": [
+          "Nepal"
+        ],
+        "Money": null,
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"TPREL\"], \"Location\": [\"Nepal\"]}\"",
+      "score": 1.0
+    },
+    {
+      "index": 43,
+      "input": "The announcement came two days after CarTrade Tech informed the bourses that it has entered into a share purchase agreement with Sobek Auto India and its holding company OIBV for the acquisition of a 100 percent stake .",
+      "target": {
+        "Company": [
+          "CarTrade Tech",
+          "OIBV",
+          "Sobek Auto India"
+        ],
+        "Date": null,
+        "Location": null,
+        "Money": null,
+        "Person": null,
+        "Product": null,
+        "Quantity": [
+          "100 percent"
+        ]
+      },
+      "output": "{\"Company\": [\"CarTrade Tech\", \"Sobek Auto India\", \"OIBV\"], \"Date\": [], \"Location\": [], \"Money\": [\"100\"], \"Person\": [], \"Product\": [], \"Quantity\": []}",
+      "score": 0.75
+    },
+    {
+      "index": 44,
+      "input": "Nokia President and CEO Pekka Lundmark was addressing an event during the inauguration of the company 's 6G research lab in Bengaluru on Thursday .",
+      "target": {
+        "Company": [
+          "Nokia"
+        ],
+        "Date": [
+          "Thursday"
+        ],
+        "Location": [
+          "Bengaluru"
+        ],
+        "Money": null,
+        "Person": [
+          "Pekka Lundmark"
+        ],
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"Nokia\"], \"Location\": [\"Bengaluru\"]}",
+      "score": 0.6666666666666666
+    },
+    {
+      "index": 45,
+      "input": "Access to prevention and treatment for all. Leave no one behind is the theme of this year 's World Lung Day .",
+      "target": {
+        "Company": null,
+        "Date": [
+          "this year"
+        ],
+        "Location": null,
+        "Money": null,
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Date\":[\"2023\"],\"Company\":[],\"Location\":[],\"Money\":[],\"Person\":[],\"Product\":[],\"Quantity\":[]}\"",
+      "score": 0.0
+    },
+    {
+      "index": 46,
+      "input": "Aimed at unlocking the untapped tourism potential of Rameswaram , the plan seeks to project and promote Rameswaram as a major tourist attraction while ensuring the preservation of the town 's rich cultural heritage , OYO stated .",
+      "target": {
+        "Company": [
+          "OYO"
+        ],
+        "Date": null,
+        "Location": null,
+        "Money": null,
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"OYO\"], \"Location\": [\"Rameswaram\"]}\"",
+      "score": 0.6666666666666666
+    },
+    {
+      "index": 47,
+      "input": "Around 40% of BHP 's metallurgical coal , used by steel mills and known as coking coal , is now heading to India , she said .",
+      "target": {
+        "Company": [
+          "BHP"
+        ],
+        "Date": null,
+        "Location": [
+          "India"
+        ],
+        "Money": null,
+        "Person": null,
+        "Product": [
+          "metallurgical coal"
+        ],
+        "Quantity": [
+          "40%"
+        ]
+      },
+      "output": "{\"Company\": [\"BHP\"], \"Location\": [\"India\"]}",
+      "score": 0.6666666666666666
+    },
+    {
+      "index": 48,
+      "input": "Buses being a pivotal source of urban pollution , the decision will help substantially reduce pollution levels and consequential carbon emissions , SMEV Director General Sohinder Gill said in a statement .",
+      "target": {
+        "Company": [
+          "SMEV"
+        ],
+        "Date": null,
+        "Location": null,
+        "Money": null,
+        "Person": [
+          "Sohinder Gill"
+        ],
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"SMEV\"], \"Person\": [\"Sohinder Gill\"]}\"",
+      "score": 1.0
+    },
+    {
+      "index": 49,
+      "input": "The company was so far manufacturing and supplying 5.2 MW Wind Turbine Generators ( WTGs ) for domestic wind industry players .",
+      "target": {
+        "Company": null,
+        "Date": null,
+        "Location": null,
+        "Money": null,
+        "Person": null,
+        "Product": [
+          "5.2 MW Wind Turbine Generators ( WTGs )"
+        ],
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"The company\"], \"Location\": [\"domestic wind industry players\"], \"Product\": [\"Wind Turbine Generators\", \"WTGs\"]}",
+      "score": 0.0
+    },
+    {
+      "index": 50,
+      "input": "Ferguson Maidment & Co audited the annual accounts that Adani Energy Holdings and its subsidiaries filed with British government agency Companies House last month , FT reported .",
+      "target": {
+        "Company": [
+          "Adani Energy Holdings",
+          "FT",
+          "Ferguson Maidment & Co"
+        ],
+        "Date": [
+          "last month"
+        ],
+        "Location": [
+          "British"
+        ],
+        "Money": null,
+        "Person": null,
+        "Product": null,
+        "Quantity": null
+      },
+      "output": "{\"Company\": [\"Ferguson Maidment & Co\", \"Adani Energy Holdings\"], \"Location\": [\"British\", \"Companies House\"], \"Person\": [\"FT\"]}",
+      "score": 0.6
+    }
+  ]
+}
