@@ -35,7 +35,8 @@ Track the status of the Quantization-Aware Prompt Evolution (QAPE) research task
 - [x] Implement genetic prompt mutation algorithm (`src/optimize.py`).
 - [x] Run prompt evolution for `llama3.2:latest` on Financial task.
 - [x] Run prompt evolution for `llama3.2:latest` on PII extraction task.
-- [ ] Run prompt evolution on math tasks (GSM8K/SVAMP).
+- [x] Run prompt evolution on GSM8K math task.
+- [ ] Run prompt evolution on SVAMP math task.
 - [ ] Perform cross-precision transfer evaluations (e.g., testing evolved Q4 prompts on FP16 and vice-versa).
 - [ ] Compile performance recovery statistics.
 

@@ -26,4 +26,5 @@ This document summarizes the baseline performance of local quantized models on o
 | Target Model | Task | Meta-Model | Baseline Test Score | Evolved Test Score | Improvement |
 | :--- | :--- | :--- | :---: | :---: | :---: |
 | `llama3.2:latest` | `financial` | `gemma2:2b` | 55.81% | 64.94% | **+9.14%** |
+| `llama3.2:latest` | `gsm8k` | `gemma2:2b` | 76.67% | 76.67% | +0.00% |
 | `llama3.2:latest` | `pii` | `gemma2:2b` | 27.15% | 24.29% | -2.86% |
