@@ -5,8 +5,10 @@ import os
 models = [
     "gemma2:2b", 
     "gemma2:2b-instruct-q8_0", 
+    "gemma2:2b-instruct-fp16",
     "llama3.2:latest", 
-    "llama3.2:3b-instruct-q8_0"
+    "llama3.2:3b-instruct-q8_0",
+    "llama3.2:3b-instruct-fp16"
 ]
 tasks = ["gsm8k", "svamp", "pii", "financial"]
 limit = 50

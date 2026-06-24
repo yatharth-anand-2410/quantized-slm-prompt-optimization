@@ -27,7 +27,7 @@ def query_ollama(model: str, prompt: str, temperature: float = 0.0) -> str:
         headers={"Content-Type": "application/json"}
     )
     try:
-        with urllib.request.urlopen(req, timeout=45) as response:
+        with urllib.request.urlopen(req, timeout=120) as response:
             res_data = json.loads(response.read().decode("utf-8"))
             return res_data.get("response", "")
     except Exception as e:

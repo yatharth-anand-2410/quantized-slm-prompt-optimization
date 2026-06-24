@@ -4,13 +4,13 @@ Track the status of the Quantization-Aware Prompt Evolution (QAPE) research task
 
 ---
 
-## 🚀 Current Status: Phase 2 (Experimental Run - Baseline & Degradation)
+## 🚀 Current Status: Phase 3 (Prompt Optimization Loop)
 
 | Phase | Description | Target Date | Status |
 | :--- | :--- | :--- | :--- |
 | **Phase 1** | Literature Review & Setup | June 17, 2026 | ✅ Completed |
-| **Phase 2** | Experimental Run - Baseline & Degradation | June 30, 2026 | 🔄 In Progress |
-| **Phase 3** | Prompt Optimization Loop | July 14, 2026 | ⏳ Scheduled |
+| **Phase 2** | Experimental Run - Baseline & Degradation | June 30, 2026 | ✅ Completed |
+| **Phase 3** | Prompt Optimization Loop | July 14, 2026 | 🔄 In Progress |
 | **Phase 4** | Drafting EMNLP Short Paper | July 28, 2026 | ⏳ Scheduled |
 | **Phase 5** | Polish & Submission | August 2, 2026 | ⏳ Scheduled |
 
@@ -23,12 +23,12 @@ Track the status of the Quantization-Aware Prompt Evolution (QAPE) research task
 - [x] Local environment setup (Ollama local inference).
 - [x] Dataset downloader script and fetching benchmarks (GSM8K, SVAMP, Cleanlab PII & Financial NER).
 
-### Phase 2: Baseline & Degradation (In Progress)
+### Phase 2: Baseline & Degradation (Completed)
 - [x] Run baseline evaluations for `gemma2:2b` (4-bit).
 - [x] Run baseline evaluations for `llama3.2:latest` (3B, 4-bit).
 - [x] Run baseline evaluations for `gemma2:2b-instruct-q8_0` (8-bit).
 - [x] Run baseline evaluations for `llama3.2:3b-instruct-q8_0` (8-bit).
-- [ ] Run baseline evaluations for remaining low-precision models (e.g., Q3/Q2 if applicable).
+- [x] Run baseline evaluations for FP16 models (`gemma2:2b-instruct-fp16`, `llama3.2:3b-instruct-fp16`).
 - [x] Document precision-induced degradation observations.
 
 ### Phase 3: Prompt Optimization Loop (Scheduled)

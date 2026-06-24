@@ -68,6 +68,8 @@ Here is the current prompt template (with '{{input}}' as the placeholder for the
 The model's current score on this task using this prompt is {score:.2f}%.
 Your modification goal is: {mutation_instruction}
 
+CRITICAL: Do NOT include generic empty JSON templates (like ```json\n{{}}\n```) in the prompt template itself, as this causes the model to overfit and output empty objects. Ensure any format guidelines specify that the keys must be populated with actual extracted data.
+
 Generate a new, improved prompt template.
 Your response MUST contain ONLY the new prompt template text and nothing else. Do not wrap it in quotes, codeblocks, or explanatory text.
 Ensure that '{{input}}' is included in your new prompt template as the placeholder for the input data.
