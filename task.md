@@ -22,6 +22,7 @@ Track the status of the Quantization-Aware Prompt Evolution (QAPE) research task
 - [x] Literature review on precision drift and prompt optimization.
 - [x] Local environment setup (Ollama local inference).
 - [x] Dataset downloader script and fetching benchmarks (GSM8K, SVAMP, Cleanlab PII & Financial NER).
+- [x] Comparative benchmarking and timeout-adjusted analysis report (benchmarking_analysis.md).
 
 ### Phase 2: Baseline & Degradation (Completed)
 - [x] Run baseline evaluations for `gemma2:2b` (4-bit).
