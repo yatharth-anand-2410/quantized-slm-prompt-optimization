@@ -39,6 +39,7 @@ Track the status of the Quantization-Aware Prompt Evolution (QAPE) research task
 - [x] Run prompt evolution on GSM8K math task.
 - [x] Run prompt evolution on SVAMP math task.
 - [ ] Perform cross-precision transfer evaluations (e.g., testing evolved Q4 prompts on FP16 and vice-versa).
+- [ ] Evaluate SOTA sub-1B model baseline (Qwen-2.5-0.5B) on reasoning and extraction tasks.
 - [ ] Compile performance recovery statistics.
 
 ### Phase 4 & 5: Paper Drafting & Submission (Scheduled)
