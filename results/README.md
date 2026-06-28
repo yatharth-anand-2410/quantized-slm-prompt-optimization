@@ -28,6 +28,10 @@ This document summarizes the baseline performance of local quantized models on o
 | `llama3.2:3b-instruct-fp16` | `svamp` | Accuracy | 76.00% |
 | `llama3.2:3b-instruct-fp16` | `pii` | F1 Score | 23.53% |
 | `llama3.2:3b-instruct-fp16` | `financial` | F1 Score | 60.40% |
+| `qwen2.5:0.5b` | `gsm8k` | Accuracy | 34.00% |
+| `qwen2.5:0.5b` | `svamp` | Accuracy | 40.00% |
+| `qwen2.5:0.5b` | `pii` | F1 Score | 8.73% |
+| `qwen2.5:0.5b` | `financial` | F1 Score | 4.93% |
 
 ## 🧬 Optimized Prompt Results (Limit=50, 40% Val / 60% Test Split)
 
