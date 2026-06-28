@@ -1,0 +1,32 @@
+{
+  "task": "financial",
+  "target_model": "qwen2.5:0.5b",
+  "meta_model": "gemma2:2b",
+  "baseline_prompt": "You are a precise data extraction agent. Extract financial entities from the text below into a JSON object.\nThe keys of the JSON object must be the entity categories present in the text, and the values must be lists of extracted strings.\nOnly extract categories that actually appear in the text. Do not output any key with a null or empty list.\n\nSupported categories are:\nCompany, Date, Location, Money, Person, Product, Quantity\n\nDo not output any introductory or explanatory text. Output ONLY valid raw JSON.\n\nText: {input}\n\nJSON:",
+  "evolved_prompt": "You are a financial data extractor.  Extract entities from the text below. Put the extracted entities into a JSON object with keys representing categories mentioned in the text. If you find an entity category not mentioned, don't include it in your output. For each value, either leave it as an empty list or fill it with the actual entity (e.g., \"Apple\").\n\nJSON:\n```json\n{\n    \"Company\": [], \n    \"Date\": [], \n    \"Location\": [], \n    \"Money\": [],\n    \"Person\": [], \n    \"Product\": [], \n    \"Quantity\": []\n}\n```\n'{input}'",
+  "baseline_test_score": 4.888888888888888,
+  "evolved_test_score": 29.904761904761912,
+  "improvement": 25.015873015873023,
+  "history": [
+    {
+      "generation": 0,
+      "prompt": "You are a precise data extraction agent. Extract financial entities from the text below into a JSON object.\nThe keys of the JSON object must be the entity categories present in the text, and the values must be lists of extracted strings.\nOnly extract categories that actually appear in the text. Do not output any key with a null or empty list.\n\nSupported categories are:\nCompany, Date, Location, Money, Person, Product, Quantity\n\nDo not output any introductory or explanatory text. Output ONLY valid raw JSON.\n\nText: {input}\n\nJSON:",
+      "score": 5.0
+    },
+    {
+      "generation": 1,
+      "prompt": "You are a precise financial data extractor. Extract financial entities from the text below into a JSON object. \n\nThe JSON object must have keys representing categories explicitly mentioned in the text and values containing only extracted strings, with each value being either an empty list or non-empty.  \n\nDo not extract any entity category if it is not explicitly mentioned in the text. Do not output any key with null or an empty list. \n\n**Text:** {input}\n\nJSON:\n```json\n{\n    \"Company\": [], \n    \"Date\": [], \n    \"Location\": [], \n    \"Money\": [],\n    \"Person\": [], \n    \"Product\": [], \n    \"Quantity\": []\n}\n```",
+      "score": 25.880952380952376
+    },
+    {
+      "generation": 2,
+      "prompt": "You are a financial data extractor.  Extract entities from the text below. Put the extracted entities into a JSON object with keys representing categories mentioned in the text. If you find an entity category not mentioned, don't include it in your output. For each value, either leave it as an empty list or fill it with the actual entity (e.g., \"Apple\").\n\nJSON:\n```json\n{\n    \"Company\": [], \n    \"Date\": [], \n    \"Location\": [], \n    \"Money\": [],\n    \"Person\": [], \n    \"Product\": [], \n    \"Quantity\": []\n}\n```\n'{input}'",
+      "score": 51.90476190476191
+    },
+    {
+      "generation": 3,
+      "prompt": "You are a financial data extractor.  Extract entities from the text below. Put the extracted entities into a JSON object with keys representing categories mentioned in the text. If you find an entity category not mentioned, don't include it in your output. For each value, either leave it as an empty list or fill it with the actual entity (e.g., \"Apple\").\n\nJSON:\n```json\n{\n    \"Company\": [], \n    \"Date\": [], \n    \"Location\": [], \n    \"Money\": [],\n    \"Person\": [], \n    \"Product\": [], \n    \"Quantity\": []\n}\n```\n'{input}'",
+      "score": 51.90476190476191
+    }
+  ]
+}

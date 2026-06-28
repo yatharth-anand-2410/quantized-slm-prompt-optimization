@@ -1,0 +1,32 @@
+{
+  "task": "svamp",
+  "target_model": "qwen2.5:0.5b",
+  "meta_model": "gemma2:2b",
+  "baseline_prompt": "Solve the following math word problem step by step. Write your final numerical answer at the end preceded by '#### ' (e.g. '#### 42').\n\nProblem: {input}\n\nSolution:",
+  "evolved_prompt": "Solve the following math word problem step by step.  Write your final numerical answer at the end preceded by '#### ' (e.g. '#### 42').  \n\n{input}\n\n**Solution:** \n \n---",
+  "baseline_test_score": 36.666666666666664,
+  "evolved_test_score": 46.666666666666664,
+  "improvement": 10.0,
+  "history": [
+    {
+      "generation": 0,
+      "prompt": "Solve the following math word problem step by step. Write your final numerical answer at the end preceded by '#### ' (e.g. '#### 42').\n\nProblem: {input}\n\nSolution:",
+      "score": 45.0
+    },
+    {
+      "generation": 1,
+      "prompt": "Solve the following math word problem step by step. Write your final numerical answer at the end preceded by '#### ' (e.g. '#### 42').\n\nProblem: {input}\n\nSolution:",
+      "score": 45.0
+    },
+    {
+      "generation": 2,
+      "prompt": "Solve the following math word problem step by step.  Write your final numerical answer at the end preceded by '#### ' (e.g. '#### 42').  \n\n{input}\n\n**Solution:** \n \n---",
+      "score": 50.0
+    },
+    {
+      "generation": 3,
+      "prompt": "Solve the following math word problem step by step.  Write your final numerical answer at the end preceded by '#### ' (e.g. '#### 42').  \n\n{input}\n\n**Solution:** \n \n---",
+      "score": 50.0
+    }
+  ]
+}
