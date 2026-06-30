@@ -12,15 +12,22 @@ import os
 
 def query_ollama(model: str, prompt: str, temperature: float = 0.0) -> str:
     url = "http://localhost:11434/api/generate"
+    # Run FP16 model on CPU to avoid GPU Metal swapping deadlocks/freezes on 16GB Mac
+    num_gpu = 0 if "fp16" in model.lower() else None
+    
+    options = {
+        "temperature": temperature,
+        "num_predict": 256,
+        "num_ctx": 512
+    }
+    if num_gpu is not None:
+        options["num_gpu"] = num_gpu
+
     data = {
         "model": model,
         "prompt": prompt,
         "stream": False,
-        "options": {
-            "temperature": temperature,
-            "num_predict": 256,
-            "num_ctx": 512
-        }
+        "options": options
     }
     req = urllib.request.Request(
         url,

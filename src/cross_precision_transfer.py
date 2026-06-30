@@ -75,6 +75,27 @@ def evaluate_prompt(model: str, task: str, prompt_template: str, dataset: list) 
         
     return (total_score / len(dataset)) * 100
 
+def unload_model(model: str):
+    import urllib.request
+    import json
+    url = "http://localhost:11434/api/generate"
+    data = {
+        "model": model,
+        "prompt": "",
+        "stream": False,
+        "keep_alive": 0
+    }
+    req = urllib.request.Request(
+        url,
+        data=json.dumps(data).encode("utf-8"),
+        headers={"Content-Type": "application/json"}
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=10) as response:
+            response.read()
+    except Exception as e:
+        print(f"Note: failed to unload model {model}: {e}")
+
 def main():
     parser = argparse.ArgumentParser(description="Run cross-precision transfer evaluations on test set.")
     parser.add_argument("--output", type=str, default="results/cross_precision_transfer.json", help="Path to save evaluation results")
@@ -147,6 +168,9 @@ def main():
             fp16_score = evaluate_prompt(model_name, task, evolved_fp16_p, test_dataset)
             results[task][model_name]["evolved_fp16_prompt"] = fp16_score
             print(f"Evolved FP16 Score: {fp16_score:.2f}%")
+            # Unload model from VRAM to prevent VRAM swapping overhead/hangs
+            print(f"🧹 Unloading model {model_name} from VRAM...")
+            unload_model(model_name)
             
         # Save output after each task
         output_dir = os.path.dirname(args.output)
