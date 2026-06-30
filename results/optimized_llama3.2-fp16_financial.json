@@ -1,0 +1,32 @@
+{
+  "task": "financial",
+  "target_model": "llama3.2:3b-instruct-fp16",
+  "meta_model": "gemma2:2b",
+  "baseline_prompt": "You are a precise data extraction agent. Extract financial entities from the text below into a JSON object.\nThe keys of the JSON object must be the entity categories present in the text, and the values must be lists of extracted strings.\nOnly extract categories that actually appear in the text. Do not output any key with a null or empty list.\n\nSupported categories are:\nCompany, Date, Location, Money, Person, Product, Quantity\n\nDo not output any introductory or explanatory text. Output ONLY valid raw JSON.\n\nText: {input}\n\nJSON:",
+  "evolved_prompt": "You are a precise data extraction agent. Extract financial entities from the text below into a JSON object.\nThe keys of the JSON object must be the entity categories present in the text, and the values must be lists of extracted strings.\nOnly extract categories that actually appear in the text. Do not output any key with a null or empty list.\n\nSupported categories are:\nCompany, Date, Location, Money, Person, Product, Quantity\n\nDo not output any introductory or explanatory text. Output ONLY valid raw JSON.\n\nText: {input}\n\nJSON:",
+  "baseline_test_score": 0.0,
+  "evolved_test_score": 0.0,
+  "improvement": 0.0,
+  "history": [
+    {
+      "generation": 0,
+      "prompt": "You are a precise data extraction agent. Extract financial entities from the text below into a JSON object.\nThe keys of the JSON object must be the entity categories present in the text, and the values must be lists of extracted strings.\nOnly extract categories that actually appear in the text. Do not output any key with a null or empty list.\n\nSupported categories are:\nCompany, Date, Location, Money, Person, Product, Quantity\n\nDo not output any introductory or explanatory text. Output ONLY valid raw JSON.\n\nText: {input}\n\nJSON:",
+      "score": 0.0
+    },
+    {
+      "generation": 1,
+      "prompt": "You are a precise data extraction agent. Extract financial entities from the text below into a JSON object.\nThe keys of the JSON object must be the entity categories present in the text, and the values must be lists of extracted strings.\nOnly extract categories that actually appear in the text. Do not output any key with a null or empty list.\n\nSupported categories are:\nCompany, Date, Location, Money, Person, Product, Quantity\n\nDo not output any introductory or explanatory text. Output ONLY valid raw JSON.\n\nText: {input}\n\nJSON:",
+      "score": 0.0
+    },
+    {
+      "generation": 2,
+      "prompt": "You are a precise data extraction agent. Extract financial entities from the text below into a JSON object.\nThe keys of the JSON object must be the entity categories present in the text, and the values must be lists of extracted strings.\nOnly extract categories that actually appear in the text. Do not output any key with a null or empty list.\n\nSupported categories are:\nCompany, Date, Location, Money, Person, Product, Quantity\n\nDo not output any introductory or explanatory text. Output ONLY valid raw JSON.\n\nText: {input}\n\nJSON:",
+      "score": 0.0
+    },
+    {
+      "generation": 3,
+      "prompt": "You are a precise data extraction agent. Extract financial entities from the text below into a JSON object.\nThe keys of the JSON object must be the entity categories present in the text, and the values must be lists of extracted strings.\nOnly extract categories that actually appear in the text. Do not output any key with a null or empty list.\n\nSupported categories are:\nCompany, Date, Location, Money, Person, Product, Quantity\n\nDo not output any introductory or explanatory text. Output ONLY valid raw JSON.\n\nText: {input}\n\nJSON:",
+      "score": 0.0
+    }
+  ]
+}

@@ -18,7 +18,8 @@ def query_ollama(model: str, prompt: str, temperature: float = 0.0) -> str:
         "stream": False,
         "options": {
             "temperature": temperature,
-            "num_predict": 512
+            "num_predict": 256,
+            "num_ctx": 512
         }
     }
     req = urllib.request.Request(

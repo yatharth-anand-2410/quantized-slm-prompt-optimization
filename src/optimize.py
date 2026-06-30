@@ -3,6 +3,7 @@ import json
 import os
 import re
 import random
+from concurrent.futures import ThreadPoolExecutor
 from evaluate import load_dataset, query_ollama, score_math, score_pii, score_financial
 
 # ==========================================
@@ -102,13 +103,15 @@ def evaluate_prompt(model: str, task: str, prompt_template: str, dataset: list) 
     else:
         return 0.0
 
-    total_score = 0.0
-    for item in dataset:
+    def eval_item(item):
         prompt = prompt_template.replace("{input}", item["input"])
         output = query_ollama(model, prompt)
-        total_score += score_fn(output, item["target"])
+        return score_fn(output, item["target"])
+
+    with ThreadPoolExecutor(max_workers=1) as executor:
+        scores = list(executor.map(eval_item, dataset))
         
-    return (total_score / len(dataset)) * 100
+    return (sum(scores) / len(dataset)) * 100
 
 def run_optimization(target_model: str, meta_model: str, task: str, limit: int, generations: int, pop_size: int, output_path: str = None):
     print(f"\n🧬 Starting Prompt Optimization Loop")

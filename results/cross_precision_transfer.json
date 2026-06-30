@@ -1,0 +1,23 @@
+{
+  "results": {
+    "gsm8k": {
+      "llama3.2:latest": {
+        "baseline_prompt": 63.33333333333333,
+        "evolved_q4_prompt": 70.0,
+        "evolved_fp16_prompt": 56.666666666666664
+      },
+      "llama3.2:3b-instruct-fp16": {
+        "baseline_prompt": 66.66666666666666,
+        "evolved_q4_prompt": 56.666666666666664,
+        "evolved_fp16_prompt": 53.333333333333336
+      }
+    }
+  },
+  "prompts": {
+    "gsm8k": {
+      "baseline": "Solve the following math word problem step by step. Write your final numerical answer at the end preceded by '#### ' (e.g. '#### 42').\n\nProblem: {input}\n\nSolution:",
+      "evolved_q4": "Solve {input} step-by-step by showing your work.  Format the answer as follows: \n#### Solution: \n{format_answer}\n\n---",
+      "evolved_fp16": "Solve the following math word problem step by step.  Write your final numerical answer at the end preceded by '####' (e.g. '#### 42').\n\n**Step 1:** [Explicitly state the first step of the solution.] \n**Step 2:** [Explicitly state the second step of the solution.]\n**Step 3:** [Explicitly state the third step of the solution.] \n... (Continue for all steps)\n\n**Problem:** {input}\n\nSolution:\n####  Final numerical answer preceded by '####' (e.g., '#### 42')\n---"
+    }
+  }
+}

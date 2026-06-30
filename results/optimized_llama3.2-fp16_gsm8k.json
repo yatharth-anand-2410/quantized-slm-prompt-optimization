@@ -1,0 +1,32 @@
+{
+  "task": "gsm8k",
+  "target_model": "llama3.2:3b-instruct-fp16",
+  "meta_model": "gemma2:2b",
+  "baseline_prompt": "Solve the following math word problem step by step. Write your final numerical answer at the end preceded by '#### ' (e.g. '#### 42').\n\nProblem: {input}\n\nSolution:",
+  "evolved_prompt": "Solve the following math word problem step by step.  Write your final numerical answer at the end preceded by '####' (e.g. '#### 42').\n\n**Step 1:** [Explicitly state the first step of the solution.] \n**Step 2:** [Explicitly state the second step of the solution.]\n**Step 3:** [Explicitly state the third step of the solution.] \n... (Continue for all steps)\n\n**Problem:** {input}\n\nSolution:\n####  Final numerical answer preceded by '####' (e.g., '#### 42')\n---",
+  "baseline_test_score": 86.66666666666667,
+  "evolved_test_score": 66.66666666666666,
+  "improvement": -20.000000000000014,
+  "history": [
+    {
+      "generation": 0,
+      "prompt": "Solve the following math word problem step by step. Write your final numerical answer at the end preceded by '#### ' (e.g. '#### 42').\n\nProblem: {input}\n\nSolution:",
+      "score": 65.0
+    },
+    {
+      "generation": 1,
+      "prompt": "Solve the following math word problem step by step. Write your final numerical answer at the end preceded by '#### ' (e.g. '#### 42').\n\nProblem: {input}\n\nSolution:",
+      "score": 65.0
+    },
+    {
+      "generation": 2,
+      "prompt": "Solve the following math word problem step by step. Write your final numerical answer at the end preceded by '#### ' (e.g. '#### 42').\n\nProblem: {input}\n\nSolution:",
+      "score": 65.0
+    },
+    {
+      "generation": 3,
+      "prompt": "Solve the following math word problem step by step.  Write your final numerical answer at the end preceded by '####' (e.g. '#### 42').\n\n**Step 1:** [Explicitly state the first step of the solution.] \n**Step 2:** [Explicitly state the second step of the solution.]\n**Step 3:** [Explicitly state the third step of the solution.] \n... (Continue for all steps)\n\n**Problem:** {input}\n\nSolution:\n####  Final numerical answer preceded by '####' (e.g., '#### 42')\n---",
+      "score": 70.0
+    }
+  ]
+}
