@@ -41,7 +41,7 @@ Track the status of the Quantization-Aware Prompt Evolution (QAPE) research task
 - [x] Evaluate SOTA sub-1B model baseline (Qwen-2.5-0.5B) on reasoning and extraction tasks.
 - [x] Run prompt evolution for `qwen2.5:0.5b` on all 4 tasks (GSM8K, SVAMP, PII, Financial NER).
 - [x] Compile performance recovery statistics.
-- [ ] Perform cross-precision transfer evaluations (e.g., testing evolved Q4 prompts on FP16 and vice-versa).
+- [x] Perform cross-precision transfer evaluations (e.g., testing evolved Q4 prompts on FP16 and vice-versa).
 
 ### Phase 4 & 5: Paper Drafting & Submission (Scheduled)
 - [ ] Setup EMNLP LaTeX template.

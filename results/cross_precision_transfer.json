@@ -23,6 +23,30 @@
         "evolved_q4_prompt": 73.33333333333333,
         "evolved_fp16_prompt": 80.0
       }
+    },
+    "pii": {
+      "llama3.2:latest": {
+        "baseline_prompt": 25.14814814814815,
+        "evolved_q4_prompt": 24.33862433862434,
+        "evolved_fp16_prompt": 25.14814814814815
+      },
+      "llama3.2:3b-instruct-fp16": {
+        "baseline_prompt": 21.07936507936508,
+        "evolved_q4_prompt": 19.98925148925149,
+        "evolved_fp16_prompt": 21.275443510737627
+      }
+    },
+    "financial": {
+      "llama3.2:latest": {
+        "baseline_prompt": 55.8066933066933,
+        "evolved_q4_prompt": 64.94361194361194,
+        "evolved_fp16_prompt": 55.8066933066933
+      },
+      "llama3.2:3b-instruct-fp16": {
+        "baseline_prompt": 60.85281385281386,
+        "evolved_q4_prompt": 67.88372738372739,
+        "evolved_fp16_prompt": 60.85281385281386
+      }
     }
   },
   "prompts": {
@@ -35,6 +59,16 @@
       "baseline": "Solve the following math word problem step by step. Write your final numerical answer at the end preceded by '#### ' (e.g. '#### 42').\n\nProblem: {input}\n\nSolution:",
       "evolved_q4": "Solve the following math word problem step by step. Write your final numerical answer at the end preceded by '#### ' (e.g., '#### 42').\n\nProblem: {input}\n\nSolution: \n---  \nProvide a clear and concise solution using the steps outlined in the problem statement. Include units of measurement where applicable, but do not include unnecessary calculations or explanations unless explicitly requested (e.g., \"Explain step-by-step why you arrived at this answer\").\n\n#### Final numerical answer:",
       "evolved_fp16": "Solve the following math word problem step-by-step. Write your final numerical answer at the end preceded by '#### '. \n\n**Problem:** {input}\n \n**Solution:** Provide a clear and concise numerical solution to the problem, using appropriate mathematical notation (e.g., variables, equations, units). \n\n\n**Final Answer:**  ####"
+    },
+    "pii": {
+      "baseline": "You are a precise data extraction agent. Extract any personally identifiable information (PII) from the text below into a JSON object.\nThe keys of the JSON object must be the PII categories present in the text, and the values must be the extracted strings.\nOnly extract categories that actually appear in the text. Do not output any key with a null or empty value.\n\nSupported categories include:\nACCOUNTNAME, ACCOUNTNUMBER, AGE, AMOUNT, BIC, BITCOINADDRESS, BUILDINGNUMBER, CITY, COMPANYNAME, COUNTY, CREDITCARDCVV, CREDITCARDISSUER, CREDITCARDNUMBER, CURRENCY, CURRENCYCODE, CURRENCYNAME, CURRENCYSYMBOL, DATE, DOB, EMAIL, ETHEREUMADDRESS, EYECOLOR, FIRSTNAME, GENDER, HEIGHT, IBAN, IP, IPV4, IPV6, JOBAREA, JOBTITLE, JOBTYPE, LASTNAME, LITECOINADDRESS, MAC, MASKEDNUMBER, MIDDLENAME, NEARBYGPSCOORDINATE, ORDINALDIRECTION, PASSWORD, PHONEIMEI, PHONENUMBER, PIN, PREFIX, SECONDARYADDRESS, SEX, SSN, STATE, STREET, TIME, URL, USERAGENT, USERNAME, VEHICLEVIN, VEHICLEVRM, ZIPCODE\n\nDo not output any introductory or explanatory text. Output ONLY valid raw JSON.\n\nText: {input}\n\nJSON:",
+      "evolved_q4": "You are a PII extractor. Please follow these steps to extract personally identifiable information (PII) from the text below and output it into JSON format. \n\n**Step-by-step instructions:**\n\n1. **Identify all potential PII categories within the input text.**  Refer to the list of supported categories provided below.\n2. **Extract each identified PII category, ensuring accuracy and completeness.** Use only the exact wording from the table for category selection; do not use your own interpretation or additional terms. \n3. **Format the extracted information into a JSON structure.** The output should include:\n    ```json\n    {PII category}: {string} \n    ```\n\n**Supported PII categories:**\n\nACCOUNTNAME, ACCOUNTNUMBER, AGE, AMOUNT, BIC, BITCOINADDRESS, BUILDINGNUMBER, CITY, COMPANYNAME, COUNTY, CREDITCARDCVV, CREDITCARDISSUER, CREDITCARDNUMBER, CURRENCY, CURRENCYCODE, CURRENCYNAME, CURRENCYSYMBOL, DATE, DOB, EMAIL, ETHEREUMADDRESS, EYECOLOR, FIRSTNAME, GENDER, HEIGHT, IBAN, IP, IPV4, IPV6, JOBAREA, JOBTITLE, JOBTYPE, LASTNAME, LITECOINADDRESS, MAC, MASKEDNUMBER, MIDDLENAME, NEARBYGPSCOORDINATE, ORDINALDIRECTION, PASSWORD, PHONEIMEI, PHONENUMBER, PIN, PREFIX, SECONDARYADDRESS, SEX, SSN, STATE, STREET, TIME, URL, USERAGENT, USERNAME, VEHICLEVIN, VEHICLEVRM, ZIPCODE\n\n\n**Text:** {input}\n\nJSON: \n```json\n{}\n```",
+      "evolved_fp16": "You are a precise data extraction agent. Extract any personally identifiable information (PII) from the text below into a JSON object.\nThe keys of the JSON object must be the PII categories present in the text, and the values must be the extracted strings.\nOnly extract categories that actually appear in the text. Do not output any key with a null or empty value.\n\nSupported categories include:\nACCOUNTNAME, ACCOUNTNUMBER, AGE, AMOUNT, BIC, BITCOINADDRESS, BUILDINGNUMBER, CITY, COMPANYNAME, COUNTY, CREDITCARDCVV, CREDITCARDISSUER, CREDITCARDNUMBER, CURRENCY, CURRENCYCODE, CURRENCYNAME, CURRENCYSYMBOL, DATE, DOB, EMAIL, ETHEREUMADDRESS, EYECOLOR, FIRSTNAME, GENDER, HEIGHT, IBAN, IP, IPV4, IPV6, JOBAREA, JOBTITLE, JOBTYPE, LASTNAME, LITECOINADDRESS, MAC, MASKEDNUMBER, MIDDLENAME, NEARBYGPSCOORDINATE, ORDINALDIRECTION, PASSWORD, PHONEIMEI, PHONENUMBER, PIN, PREFIX, SECONDARYADDRESS, SEX, SSN, STATE, STREET, TIME, URL, USERAGENT, USERNAME, VEHICLEVIN, VEHICLEVRM, ZIPCODE\n\nDo not output any introductory or explanatory text. Output ONLY valid raw JSON.\n\nText: {input}\n\nJSON:"
+    },
+    "financial": {
+      "baseline": "You are a precise data extraction agent. Extract financial entities from the text below into a JSON object.\nThe keys of the JSON object must be the entity categories present in the text, and the values must be lists of extracted strings.\nOnly extract categories that actually appear in the text. Do not output any key with a null or empty list.\n\nSupported categories are:\nCompany, Date, Location, Money, Person, Product, Quantity\n\nDo not output any introductory or explanatory text. Output ONLY valid raw JSON.\n\nText: {input}\n\nJSON:",
+      "evolved_q4": "You are a financial entity extractor. Extract financial entities from the provided text into JSON format. \nJSON keys will be specific categories (Company, Date, Location, Money, Person, Product, Quantity) and values will be lists of extracted strings matching these categories. Only output valid JSON with non-empty lists for each key.\n\n{input}\n\nJSON: \n---",
+      "evolved_fp16": "You are a precise data extraction agent. Extract financial entities from the text below into a JSON object.\nThe keys of the JSON object must be the entity categories present in the text, and the values must be lists of extracted strings.\nOnly extract categories that actually appear in the text. Do not output any key with a null or empty list.\n\nSupported categories are:\nCompany, Date, Location, Money, Person, Product, Quantity\n\nDo not output any introductory or explanatory text. Output ONLY valid raw JSON.\n\nText: {input}\n\nJSON:"
     }
   }
 }
