@@ -145,9 +145,14 @@ def main():
             "evolved_fp16": evolved_fp16_p
         }
         
-        results[task] = {}
+        if task not in results:
+            results[task] = {}
         
         for model_precision, model_name in models.items():
+            if model_name in results[task] and len(results[task][model_name]) == 3:
+                print(f"Skipping model {model_name} for task {task} (already evaluated).")
+                continue
+                
             results[task][model_name] = {}
             print(f"\n🤖 Running evaluations on target model: {model_name} ({model_precision.upper()})")
             
@@ -172,20 +177,19 @@ def main():
             print(f"🧹 Unloading model {model_name} from VRAM...")
             unload_model(model_name)
             
-        # Save output after each task
-        output_dir = os.path.dirname(args.output)
-        if output_dir:
-            os.makedirs(output_dir, exist_ok=True)
-            
-        output_data = {
-            "results": results,
-            "prompts": prompts_cache
-        }
-        
-        with open(args.output, "w", encoding="utf-8") as f:
-            json.dump(output_data, f, indent=2)
-            
-        print(f"💾 Checkpoint saved for task {task} in {args.output}")
+            # Save output after each model precision level evaluation
+            output_dir = os.path.dirname(args.output)
+            if output_dir:
+                os.makedirs(output_dir, exist_ok=True)
+                
+            output_data = {
+                "results": results,
+                "prompts": prompts_cache
+            }
+            with open(args.output, "w", encoding="utf-8") as f:
+                json.dump(output_data, f, indent=2)
+                
+            print(f"💾 Checkpoint saved for task {task} / model {model_name} in {args.output}")
 
 if __name__ == "__main__":
     main()
