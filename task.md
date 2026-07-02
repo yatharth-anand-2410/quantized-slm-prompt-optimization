@@ -4,14 +4,14 @@ Track the status of the Quantization-Aware Prompt Evolution (QAPE) research task
 
 ---
 
-## 🚀 Current Status: Phase 3 (Prompt Optimization Loop)
+## 🚀 Current Status: Phase 4 (Drafting EMNLP Short Paper)
 
 | Phase | Description | Target Date | Status |
 | :--- | :--- | :--- | :--- |
 | **Phase 1** | Literature Review & Setup | June 17, 2026 | ✅ Completed |
 | **Phase 2** | Experimental Run - Baseline & Degradation | June 30, 2026 | ✅ Completed |
-| **Phase 3** | Prompt Optimization Loop | July 14, 2026 | 🔄 In Progress |
-| **Phase 4** | Drafting EMNLP Short Paper | July 28, 2026 | ⏳ Scheduled |
+| **Phase 3** | Prompt Optimization Loop | July 14, 2026 | ✅ Completed |
+| **Phase 4** | Drafting EMNLP Short Paper | July 28, 2026 | 🔄 In Progress |
 | **Phase 5** | Polish & Submission | August 2, 2026 | ⏳ Scheduled |
 
 ---
@@ -32,7 +32,7 @@ Track the status of the Quantization-Aware Prompt Evolution (QAPE) research task
 - [x] Run baseline evaluations for FP16 models (`gemma2:2b-instruct-fp16`, `llama3.2:3b-instruct-fp16`).
 - [x] Document precision-induced degradation observations.
 
-### Phase 3: Prompt Optimization Loop (Scheduled)
+### Phase 3: Prompt Optimization Loop (Completed)
 - [x] Implement genetic prompt mutation algorithm (`src/optimize.py`).
 - [x] Run prompt evolution for `llama3.2:latest` on Financial task.
 - [x] Run prompt evolution for `llama3.2:latest` on PII extraction task.
@@ -43,8 +43,8 @@ Track the status of the Quantization-Aware Prompt Evolution (QAPE) research task
 - [x] Compile performance recovery statistics.
 - [x] Perform cross-precision transfer evaluations (e.g., testing evolved Q4 prompts on FP16 and vice-versa).
 
-### Phase 4 & 5: Paper Drafting & Submission (Scheduled)
-- [ ] Setup EMNLP LaTeX template.
-- [ ] Draft core sections (Abstract, Intro, Methods, Results, Discussion).
+### Phase 4 & 5: Paper Drafting & Submission (In Progress)
+- [x] Setup EMNLP LaTeX template.
+- [x] Draft core sections (Abstract, Intro, Methods, Results, Discussion).
 - [ ] Generate prompt transfer matrix visualization.
 - [ ] Final proofread and submission.
