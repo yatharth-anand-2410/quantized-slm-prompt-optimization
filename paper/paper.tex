@@ -38,6 +38,16 @@ We address two main research questions:
     \item \textbf{Cross-Precision Transferability:} Do prompts evolved on a quantized target model (e.g., Q4) transfer to the full-precision version (e.g., FP16) and vice-versa, or do they specialize to the numerical characteristics of the specific precision?
 \end{enumerate}
 
+\section{Related Work}
+\paragraph{Post-Training Quantization (PTQ)}
+Quantization techniques are critical for reducing the memory footprint of LLMs during deployment. Standard PTQ methods, such as GPTQ \cite{frantar2022gptq} and AWQ \cite{lin2023awq}, quantize weights to 4-bit or 3-bit precisions by optimizing for reconstruction loss on calibration data. For local deployments on CPU and unified memory architectures, GGUF formats under the \texttt{llama.cpp} framework are widely used. While PTQ successfully compresses models, it introduces numerical drift that degrades reasoning and structural compliance.
+
+\paragraph{Precision-Induced Behavioral Drift}
+Recent research has shown that low-precision models suffer from precision-induced behavioral drift, where the quantized model fails on tasks requiring strict formatting or multi-step logic. Google's Gemma 2 technical report \cite{gemma2} documents numerical instabilities in low-precision (FP16/Q4) regimes on specific hardware, driven by attention logit soft-capping mechanisms. Reconciling baseline scores reveals that these instabilities, combined with local hardware limitations (e.g., swapping latency and timeouts), can lead to anomalous performance drops that do not reflect the model's actual capability.
+
+\paragraph{Black-Box Prompt Optimization}
+Automated prompt engineering (APE) frameworks, such as DSPy \cite{khattab2023dspy} and genetic prompt mutation algorithms, treat language models as black-box functions to iteratively optimize prompt templates. While these methods have shown substantial improvements in full-precision models, QAPE is the first to systematically investigate prompt evolution as a compute-efficient alternative to fine-tuning for recovering performance loss in quantized models, and to study the transferability of optimized prompts across different numerical precisions.
+
 \section{Methodology}
 \subsection{Models and Tasks}
 We evaluate three open-weights models: \textbf{Llama-3.2-3B-Instruct}, \textbf{Gemma-2-2B-IT}, and the sub-1B model \textbf{Qwen-2.5-0.5B-Instruct}. We focus on two task types across four datasets:
