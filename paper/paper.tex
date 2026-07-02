@@ -144,6 +144,17 @@ Unlike mathematical reasoning tasks, structured information extraction tasks (su
 \section{Conclusion}
 We presented QAPE, demonstrating that prompt optimization is a viable, compute-efficient method to reclaim reasoning and extraction capabilities in quantized SLMs. Our cross-precision transfer evaluations reveal that prompts specialize to the quantization-induced noise of their target precision. In future work, we plan to construct joint multi-precision objective functions to evolve prompts that are robust across both quantized and full-precision weights.
 
+\section*{Limitations}
+Although QAPE successfully recovers quantization-induced performance drops, this study has several limitations:
+\begin{enumerate}
+    \item \textbf{Evaluation Scale:} Due to local CPU and memory constraints on edge devices, final evaluations were conducted on a subset of 30 test samples per task. While these show clean statistical gains, larger validation sets would provide tighter confidence bounds.
+    \item \textbf{Hardware Scope:} Experiments were conducted exclusively on Apple Silicon (M3) unified memory architectures. While this represents a standard edge deployment target, the performance and latency characteristics of quantized SLMs under local execution are known to vary across other CPU and mobile hardware families.
+    \item \textbf{Model Families:} We evaluated sub-3B parameter instruction-tuned models. The prompt specialization behaviors observed here may differ in larger scale models (e.g., 8B or 70B), where representation capacity is higher and quantization-induced drift is less severe.
+\end{enumerate}
+
+\section*{Ethics Statement}
+This research respects privacy and user data protections. All datasets used (GSM8K, SVAMP, Cleanlab PII, and Financial NER) are publicly available academic datasets. For PII anonymization tasks, the synthetic evaluation splits contain mock data rather than real personal information, presenting zero risk of disclosure. The computational footprints of our prompt evolution experiments are small (sub-3B models run locally on a single consumer device), aligning with green AI goals by avoiding energy-intensive GPU cluster training.
+
 \bibliography{custom}
 \bibliographystyle{acl_natbib}
 
