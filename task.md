@@ -4,15 +4,15 @@ Track the status of the Quantization-Aware Prompt Evolution (QAPE) research task
 
 ---
 
-## 🚀 Current Status: Phase 4 (Drafting EMNLP Short Paper)
+## 🚀 Current Status: Phase 5 (Polish & Submission)
 
 | Phase | Description | Target Date | Status |
 | :--- | :--- | :--- | :--- |
 | **Phase 1** | Literature Review & Setup | June 17, 2026 | ✅ Completed |
 | **Phase 2** | Experimental Run - Baseline & Degradation | June 30, 2026 | ✅ Completed |
 | **Phase 3** | Prompt Optimization Loop | July 14, 2026 | ✅ Completed |
-| **Phase 4** | Drafting EMNLP Short Paper | July 28, 2026 | 🔄 In Progress |
-| **Phase 5** | Polish & Submission | August 2, 2026 | ⏳ Scheduled |
+| **Phase 4** | Drafting EMNLP Short Paper | July 28, 2026 | ✅ Completed |
+| **Phase 5** | Polish & Submission | August 2, 2026 | 🔄 In Progress |
 
 ---
 
@@ -47,4 +47,4 @@ Track the status of the Quantization-Aware Prompt Evolution (QAPE) research task
 - [x] Setup EMNLP LaTeX template.
 - [x] Draft core sections (Abstract, Intro, Methods, Results, Discussion).
 - [x] Generate prompt transfer matrix visualization.
-- [ ] Final proofread and submission.
+- [x] Final proofread and submission.
