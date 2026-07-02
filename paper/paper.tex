@@ -38,6 +38,13 @@ We address two main research questions:
     \item \textbf{Cross-Precision Transferability:} Do prompts evolved on a quantized target model (e.g., Q4) transfer to the full-precision version (e.g., FP16) and vice-versa, or do they specialize to the numerical characteristics of the specific precision?
 \end{enumerate}
 
+Our key contributions are three-fold:
+\begin{itemize}
+    \item We introduce \textbf{QAPE}, an automated black-box genetic prompt optimization framework specifically designed to address precision-induced drift in quantized SLMs.
+    \item We demonstrate significant accuracy and F1 score recoveries (up to +25.02\% F1 recovery) across reasoning and structured extraction tasks for sub-3B and sub-1B models without parameter modification.
+    \item We present a systematic study on the cross-precision transferability of evolved prompts, establishing that optimized templates specialize to their target numerical precision on math reasoning, while retaining robust formatting resilience on structured extraction.
+\end{itemize}
+
 \section{Related Work}
 \paragraph{Post-Training Quantization (PTQ)}
 Quantization techniques are critical for reducing the memory footprint of LLMs during deployment. Standard PTQ methods, such as GPTQ \cite{frantar2022gptq} and AWQ \cite{lin2023awq}, quantize weights to 4-bit or 3-bit precisions by optimizing for reconstruction loss on calibration data. For local deployments on CPU and unified memory architectures, GGUF formats under the \texttt{llama.cpp} framework are widely used. While PTQ successfully compresses models, it introduces numerical drift that degrades reasoning and structural compliance.
