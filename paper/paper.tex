@@ -122,6 +122,15 @@ Table~\ref{tab:transfer-matrix} displays the cross-precision transfer matrix for
     \item \textbf{Structured Extraction Transferability:} For the structured extraction task (Financial NER), prompt transfer is highly asymmetrical and beneficial. The prompt evolved on Q4 transfers exceptionally well to FP16, achieving \textbf{67.88\%} (beating the FP16 baseline of 60.85\%). This suggests that prompts optimized to force strict formatting constraints in highly quantized models also stabilize entity parsing in full-precision models.
 \end{enumerate}
 
+\section{Discussion}
+Our cross-precision transfer results reveal two prominent architectural insights:
+
+\paragraph{Mechanisms of Precision Specialization}
+The drop in accuracy observed when transferring evolved prompts across precision boundaries (e.g., Q4 prompts on FP16 weights, and vice-versa) points to \textit{precision-dependent prompt specialization}. When optimizing on quantized models, the genetic mutation loop selects for prompts that bypass the numerical noise introduced by quantization grids. These evolved prompts often utilize specific vocabulary distributions and syntactic patterns that stabilize internal attention weights. When executed on full-precision weights (FP16), these specialized formatting and lexical constraints are no longer required and end up over-constraining the model's natural reasoning paths, leading to a performance degradation compared to directly optimized prompts.
+
+\paragraph{Asymmetric Formatting Resilience in Structured Extraction}
+Unlike mathematical reasoning tasks, structured information extraction tasks (such as Financial NER) demonstrate high resilience to cross-precision prompt transfer, showing an asymmetric benefit. Prompts evolved on the Q4 model transfer exceptionally well to FP16 targets (outperforming baseline scores by 7.03\%). In low-parameter quantized SLMs, maintaining formatting constraints (e.g., producing valid JSON arrays) is a primary bottleneck. Consequently, the Q4 evolutionary loop acts as a strict structural filter, selecting prompts with concrete JSON schemas and output syntax rules. Because formatting stability is a shared requirement across all precision levels, these highly constrained templates serve as robust anchors for the full-precision weights, yielding high transfer performance.
+
 \section{Conclusion}
 We presented QAPE, demonstrating that prompt optimization is a viable, compute-efficient method to reclaim reasoning and extraction capabilities in quantized SLMs. Our cross-precision transfer evaluations reveal that prompts specialize to the quantization-induced noise of their target precision. In future work, we plan to construct joint multi-precision objective functions to evolve prompts that are robust across both quantized and full-precision weights.
 
