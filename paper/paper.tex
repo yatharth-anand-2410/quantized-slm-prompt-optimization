@@ -79,7 +79,14 @@ Table~\ref{tab:optim-results} shows the performance of baseline prompts compared
 QAPE achieves substantial performance recovery. The most notable improvement is observed on the sub-1B `qwen2.5:0.5b` model on the Financial extraction task, recovering **$+25.02\%$** absolute F1 score (improving from $4.89\%$ to $29.90\%$).
 
 \subsection{Cross-Precision Prompt Transferability}
-Table~\ref{tab:transfer-matrix} displays the cross-precision transfer matrix for `llama3.2` across the four benchmarks.
+Table~\ref{tab:transfer-matrix} displays the cross-precision transfer matrix for `llama3.2` across the four benchmarks. Figure~\ref{fig:transfer-matrix} visualizes these relationships.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\columnwidth]{prompt_transfer_matrix.pdf}
+\caption{QAPE cross-precision prompt transfer matrices across the four benchmarks on Llama-3.2-3B. The diagonal cells represent direct optimization, while off-diagonals represent transfer across precision boundaries.}
+\label{fig:transfer-matrix}
+\end{figure}
 
 \begin{table*}[t]
 \centering

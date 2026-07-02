@@ -46,5 +46,5 @@ Track the status of the Quantization-Aware Prompt Evolution (QAPE) research task
 ### Phase 4 & 5: Paper Drafting & Submission (In Progress)
 - [x] Setup EMNLP LaTeX template.
 - [x] Draft core sections (Abstract, Intro, Methods, Results, Discussion).
-- [ ] Generate prompt transfer matrix visualization.
+- [x] Generate prompt transfer matrix visualization.
 - [ ] Final proofread and submission.
