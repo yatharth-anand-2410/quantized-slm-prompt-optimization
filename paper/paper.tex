@@ -60,7 +60,14 @@ For evaluation, we split each dataset into a validation set for evolution (indic
 QAPE implements a genetic prompt optimization loop:
 \begin{enumerate}
     \item \textbf{Initial Population:} Seeded with standard baseline prompts.
-    \item \textbf{Meta-Model Mutation:} We employ \texttt{gemma2:2b} as a meta-model to generate prompt mutations based on historical performance and error logs.
+    \item \textbf{Meta-Model Mutation:} We employ \texttt{gemma2:2b} as a meta-model to generate prompt mutations based on historical performance. Specifically, the meta-model is instructed to modify the parent prompt using one of five randomly selected mutation strategies:
+    \begin{itemize}
+        \item \textit{Rephrasing:} Make instructions clearer and more direct for quantized target capacities.
+        \item \textit{Step-by-Step Constraints:} Add explicit guidelines to ensure multi-step logic correctness.
+        \item \textit{Inline Examples:} Introduce inline formatting guidance to anchor structured outputs.
+        \item \textit{Simplification:} Avoid complex, nested instructions that confuse low-parameter weights.
+        \item \textit{Negative Guardrails:} Emphasize constraints on what not to output (e.g., avoiding conversational filler or empty fields).
+    \end{itemize}
     \item \textbf{Selection:} Prompt candidates are evaluated on the validation split using the quantized target model. Candidates are selected based on accuracy (reasoning tasks) or entity F1 score (extraction tasks).
     \item \textbf{Checkpointing:} The best evolved prompts are saved incrementally.
 \end{enumerate}
