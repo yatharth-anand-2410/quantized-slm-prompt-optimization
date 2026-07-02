@@ -82,7 +82,7 @@ QAPE implements a genetic prompt optimization loop:
 \end{enumerate}
 
 \subsection{Infrastructure and Timeout Adjustments}
-Local evaluations on unified memory edge devices (e.g., Apple M3, 16GB RAM) often suffer from swapping overhead and metal compiler pauses. In initial baseline runs, this caused frequent connection timeouts. We resolve these anomalies by using an \textit{Adjusted Score} that filters out infrastructural timeouts, calculating model capability purely on completed runs. To prevent unified memory page-locking deadlocks during FP16 evaluations, we explicitly disable GPU offloading (setting \texttt{num_gpu=0}) to execute FP16 models purely on CPU, which bypasses VRAM contention.
+Local evaluations on unified memory edge devices (e.g., Apple M3, 16GB RAM) often suffer from swapping overhead and metal compiler pauses. In initial baseline runs, this caused frequent connection timeouts. We resolve these anomalies by using an \textit{Adjusted Score} that filters out infrastructural timeouts, calculating model capability purely on completed runs. To prevent unified memory page-locking deadlocks during FP16 evaluations, we explicitly disable GPU offloading (setting \texttt{num\_gpu=0}) to execute FP16 models purely on CPU, which bypasses VRAM contention.
 
 \section{Results and Key Findings}
 
